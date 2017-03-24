@@ -1,7 +1,7 @@
 function states = sim_pend(policy, mdp, params)
 
 
-x = [-0.3, -0.7];
+x = [-pi+0.1, 0];
 
 
 states = [];
@@ -13,7 +13,6 @@ for i = 1:100
     x = rungekutta(x, action, params);
     states = [states; x];
     
-
     theta = x(1);
     l=3;
 
@@ -32,19 +31,17 @@ for i = 1:100
     end
 
 
-    figure(3)
+    figure(4)
 
 
     hold on
 
-    %Pendulum
     plot(pxp,pyp,'-k','LineWidth',5);
     plot(pxp,pyp,'-k','LineWidth',5);
     plot(pxp(1),pyp(1),'.g','LineWidth',2,'Markersize',10,'MarkerEdgeColor','k');
     plot(pxp(2),pyp(2),'gO','LineWidth',2,'Markersize',15,'MarkerEdgeColor','k','MarkerFaceColor','r');
 
     text(arrowfactor_x - 0.5 ,0.8,text_arrow);
-    %axis([x-6 x+6 0 6])
     axis([-6 6 0 6])
 
 
