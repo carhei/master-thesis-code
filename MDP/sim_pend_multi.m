@@ -1,8 +1,10 @@
 
-test.nSim = 10;
+test.nSim = 16;
 test.duration = 4;
 test.nTime = ceil(test.duration/pendulum.params.h);
 test.t = linspace(0,test.duration,test.nTime);
+test.x10 = pendulum.grid.state_bounds(1,1) + diff(pendulum.grid.state_bounds(1,:))*rand(1,test.nSim);
+test.x20 = pendulum.grid.state_bounds(2,1) + diff(pendulum.grid.state_bounds(2,:))*rand(1,test.nSim);
 
 figure(3); clf; hold on;
 

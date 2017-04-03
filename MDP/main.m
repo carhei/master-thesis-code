@@ -9,20 +9,20 @@ pendulum.params.l = 1;          % length of pendulum
 pendulum.params.b = 0.2;        % damping coefficient
 % pendulum.params.period = 2*pi*sqrt(pendulum.params.l/pendulum.params.g);
 pendulum.params.h = 0.2;%01*pendulum.params.period;
-pendulum.params.std = 0.0;      % standard deviation input disturbance
+pendulum.params.noise = 0.0;      % standard deviation input disturbance
 
 
 
 % MDP grid params
-x1_bounds = [-pi, pi];
-x1_steps = 30;
-x2_bounds = [-10,10];
-x2_steps = 30;
+x1_bounds = [-pi/2, pi/2];
+x1_steps = 15;
+x2_bounds = [-5,5];
+x2_steps = 20;
 pendulum.grid.state_bounds = [x1_bounds; x2_bounds];
 pendulum.grid.state_steps = [x1_steps; x2_steps];
 
-pendulum.grid.input_bounds = [-15; 15];
-pendulum.grid.input_steps =  5;
+pendulum.grid.input_bounds = [-20; 20];
+pendulum.grid.input_steps =  25;
 
 pendulum.grid.varyspacing = 0;
 

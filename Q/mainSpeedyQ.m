@@ -9,15 +9,15 @@ pendulum.params.l = 1;          % length of pendulum
 pendulum.params.b = 0.2;        % damping coefficient
 % pendulum.params.period = 2*pi*sqrt(pendulum.params.l/pendulum.params.g);
 pendulum.params.h = 0.2;%01*pendulum.params.period;
-pendulum.params.std = 0.2;      % standard deviation input disturbance
+pendulum.params.noise = 0.0;      % standard deviation input disturbance
 
 
 
 % MDP grid params
 x1_bounds = [-pi/2, pi/2];
-x1_steps = 5;
+x1_steps = 3;
 x2_bounds = [-5,5];
-x2_steps = 5;
+x2_steps = 3;
 pendulum.grid.state_bounds = [x1_bounds; x2_bounds];
 pendulum.grid.state_steps = [x1_steps; x2_steps];
 
@@ -35,15 +35,15 @@ pendulum.reward.type = 'exponential';  %exponential reward
 mdp = BuildMDP(pendulum);
 
 alpha       = 1;   % learning rate
-gamma       = 0.3;   % discount factor
+gamma       = 0.9;   % discount factor
 epsilon     = 0.1;  % probability of a random action selection
 
-Q = rand(size(mdp.S,1), size(mdp.A,1));
+Q = max(max(mdp.R))/(1-gamma)*ones(size(mdp.S,1), size(mdp.A,1));
 Q_prev = Q;
 
 
 
-episodes = 1500;
+episodes = 1000;
 steps = 1000;
 cum_reward= 0;
 vecV = [];
@@ -106,7 +106,7 @@ opt_params.epsilon = 0.0001;
 
 figure()
 
-for i = 1:length(V)
+for i = 1:size(v0_vec,1)
     plot(v0_vec(i,:))
     hold all
 end

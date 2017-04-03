@@ -9,15 +9,15 @@ pendulum.params.l = 1;          % length of pendulum
 pendulum.params.b = 0.2;        % damping coefficient
 % pendulum.params.period = 2*pi*sqrt(pendulum.params.l/pendulum.params.g);
 pendulum.params.h = 0.2;%01*pendulum.params.period;
-pendulum.params.std = 0.0;      % standard deviation input disturbance
+pendulum.params.noise = 0.0;      % standard deviation input disturbance
 
 
 
 % MDP grid params
 x1_bounds = [-pi/2, pi/2];
-x1_steps = 2;
+x1_steps = 3;
 x2_bounds = [-5,5];
-x2_steps = 2;
+x2_steps = 3;
 pendulum.grid.state_bounds = [x1_bounds; x2_bounds];
 pendulum.grid.state_steps = [x1_steps; x2_steps];
 
@@ -28,7 +28,6 @@ pendulum.grid.varyspacing = 0;
 
 
 pendulum.purpose = 'forValueIteration';
-
 
 
 pendulum.reward.type = 'exponential';  %exponential reward
@@ -53,7 +52,7 @@ m = 150;%log(3*s*a*(1+s*a*kappa)/delta)/(s*epsilon^2*(1-gamma)^2);
 
 
 
-Q = 1/(1-gamma)*ones(s,a); %
+Q = max(max(R))/(1-gamma)*ones(s,a); %
 U = zeros(s,a);
 
 l       = zeros(s,a);
@@ -132,13 +131,13 @@ for i = 1:length(V)
 end
 
 
-opt_params.gamma = 0.9;
+opt_params.gamma = gamma;
 opt_params.epsilon = 0.0001;
 
 [policy, n, v0_vec] = valueiteration(mdp, opt_params);
 
 figure()
-for i = 1:length(V)
+for i = 1:size(v0_vec,1)
     plot(v0_vec(i,:))
     hold all
 end
