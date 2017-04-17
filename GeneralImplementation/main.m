@@ -41,7 +41,7 @@ dMax{1} = d0*ones(x1_steps, x2_steps);
 dMin{1} = -dMax{1};
 
 count = 1;
-maxcount = 5;
+maxcount = 1;
 
 rows = ceil(sqrt(maxcount));
 cols = ceil(maxcount / rows);
@@ -49,6 +49,23 @@ cols = ceil(maxcount / rows);
 GPfigure=figure;
 SafeFigure = figure;
 SpeedyFigure = figure;
+%======================
+% Speedy Q Learning Init
+
+alpha       = 1;   % learning rate
+gamma       = 0.9;   % discount factor
+epsilon     = 0.1;  % probability of a random action selection
+
+Q = max(max(mdp.R))/(1-gamma)*ones(size(mdp.S,1), size(mdp.A,1));
+Q_prev = Q;
+
+
+steps = 40000;
+states = zeros(steps*maxcount,2);
+actions = zeros(steps*maxcount,1);
+vecV = zeros(pendulum.grid.state_steps(1)*pendulum.grid.state_steps(2),steps*maxcount);
+rewardperepisode = [];
+visited = zeros(size(mdp.S,1), size(mdp.A,1));
 
 while count <=maxcount
     figure(SafeFigure)
@@ -69,31 +86,15 @@ while count <=maxcount
     
     
     fprintf('================Speedy Q-learning====================\n')
-    alpha       = 1;   % learning rate
-    gamma       = 0.9;   % discount factor
-    epsilon     = 0.1;  % probability of a random action selection
-    
-    Q = max(max(mdp.R))/(1-gamma)*ones(size(mdp.S,1), size(mdp.A,1));
-    Q_prev = Q;
-    
-    
-    steps = 1000;
-    states = zeros(steps,2);
-    actions = zeros(steps,1);
-    vecV = zeros(pendulum.grid.state_steps(1)*pendulum.grid.state_steps(2),steps);
-    rewardperepisode = [];
-    visited = zeros(size(mdp.S,1), size(mdp.A,1));
-    
     
     x1 = pendulum.grid.state_bounds(1,1) + diff(pendulum.grid.state_bounds(1,:))*rand;
     x2 = pendulum.grid.state_bounds(2,1) + diff(pendulum.grid.state_bounds(2,:))*rand;
     x = [x1,x2];
     R = 0;
-    cum_reward= 0;
     state = discretize(x, mdp.S);
     
     for j = 1:steps
-        states(j,:) = x;
+        states(j+steps*(count-1),:) = x;
         %choose action
         if safeStates{count}(state)
             action = egreedy(state,epsilon,Q);
@@ -102,14 +103,13 @@ while count <=maxcount
             u = safeControl{count}(state);
             action = find(mdp.A==u);
         end
-        actions(j) = u;
+        actions(j+steps*(count-1)) = u;
         visited(state,action) = visited(state,action)+1;
         %apply control
         x_prime = rungekutta(x, u, pendulum.params);
         s_prime = discretize(x_prime, mdp.S);
         
         R = mdp.R(state,action);
-        cum_reward = cum_reward + R;
         temp = Q;
         
         Q(state,action) =  Q(state,action) + alpha/visited(state,action) * ( R + gamma*max(Q_prev(s_prime,:)) - Q(state,action) )+ ...
@@ -129,24 +129,24 @@ while count <=maxcount
         
         
         V = max(Q,[],2);
-        vecV(:,j) = V;
+        vecV(:,j+steps*(count-1)) = V;
         if mod(j,100)==0
             disp(['Episode ' num2str(j)])
         end
     end
-
+    
     opt_params.gamma = gamma;
     opt_params.epsilon = 0.0001;
     
     
     [policy, n, v0_vec] = valueiteration(mdp, opt_params);
     
-
+    
     figure(SpeedyFigure)
     
     subplot(rows, cols, count)
     for i = 1:size(v0_vec,1)
-        semilogy(abs(v0_vec(i,end)-vecV(i,:)))
+        semilogy(abs(v0_vec(i,end)-vecV(i,1:j+steps*(count-1))))
         hold all
     end
     title('Error Speedy Q Learning')
@@ -154,8 +154,27 @@ while count <=maxcount
     
     fprintf('===========Disturbance Estimation with GP=====================\n')
     
-    [statesGP, idx] = datasample(states,50,1);
-    actionsGP = actions(idx);
+    [~, idx] = datasample(states,1000,1);
+    idx = idx(idx>2&idx<length(states)-2);
+    
+%     statesGP = states(1:1000,:);
+%         actionsGP = actions(1:1000,:);
+
+
+%             statesGP = states([idx;idx+1],:);
+%         actionsGP = actions(idx);
+%         actionsGP = actionsGP(:);
+%     
+    %   Fourth order central differences
+        statesGP = states([idx-2;idx-1;idx;idx+1;idx+2],:);
+        actionsGP = actions(idx);
+        actionsGP = actionsGP(:);
+    
+    %Central differences
+%     statesGP = states([idx-1;idx;idx+1],:);
+%     actionsGP = actions(idx);
+%     actionsGP = actionsGP(:);
+    
     [mean, stdev, disturbance] = GaussianProcess(mdp, statesGP, actionsGP,pendulum.params);
     
     
@@ -169,7 +188,10 @@ while count <=maxcount
     xlabel('x1')
     ylabel('x2')
     zlabel('$$\hat{d}$$','Interpreter','Latex')
-    plot3(statesGP(:,1),statesGP(:,2),disturbance,'o')
+%     plot3(statesGP(:,1),statesGP(:,2),disturbance,'o')
+        plot3(statesGP(3:5:end,1),statesGP(3:5:end-2,2),disturbance,'o')
+%     plot3(statesGP(1:2:end-1,1),statesGP(1:2:end-1,2),disturbance,'o')
+%     plot3(statesGP(2:3:end-1,1),statesGP(2:3:end-1,2),disturbance,'o')
     hold off
     count = count+1;
     

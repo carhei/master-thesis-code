@@ -24,32 +24,33 @@ for i = 1:2000
     state_index = discretize(x, mdp.S);
     action = mdp.A(policy(state_index));
     actions = [actions;action];
-    params.noise = 2*sin(10*x(2))+0*randn();%*sin(10*x(1))
+    params.noise = 0;%2*sin(10*x(2))+0*randn();%*sin(10*x(1))
     x = rungekutta(x, action, params);
 end
 
 dotX = diff([X; X(end,:)])/params.h;
 
-d1 = dotX(:,1) - X(:,2);
-d2 = dotX(:,2) - (1/(params.m*params.l)*actions+params.g/params.l*sin(X(:,1)));
-
-y = d2;
-x = X;
-
-next_state = rungekutta(X, actions, params);
-d1 = next_state(:,1)- X(:,2);
-y = next_state(:,2)- (1/(params.m*params.l)*actions+params.g/params.l*sin(X(:,1)));
-
-
-
-% xs1 = linspace(-pi/4,pi/4,55);
-% xs2 = linspace(-5,5,55);
-% xs1 = linspace(-2+min(X(:,1)), 2+max(X(:,1)), 50)';
-% xs2 = linspace(-2+min(X(:,2)), 2+max(X(:,2)), 50)';
-% xs = [xs1,xs2];
-% [X1,X2] = meshgrid(xs1,xs2);
-% x_test = [X1(:) X2(:)];
+% d1 = dotX(:,1) - X(:,2);
+% d2 = dotX(:,2) - (1/(params.m*params.l)*actions+params.g/params.l*sin(X(:,1)));
 % 
+% y = d2;
+% x = X;
+% 
+% next_state = rungekutta(X, actions, params);
+% d1 = next_state(:,1)- X(:,2);
+% y = next_state(:,2)- (1/(params.m*params.l)*actions+params.g/params.l*sin(X(:,1)));
+% 
+
+x = X;
+t = linspace(0,max(X(:,2)),size(X,1));
+
+f = spline(t,X(:,2));
+fp = fnder(f);
+fnplt(f)
+fnplt(fp)
+dotX = fnval(fp,t);
+y = dotX' - (1/(params.m*params.l)*actions+params.g/params.l*sin(X(:,1)));
+
 x1 = unique(mdp.S(:,1));
 x2 = unique(mdp.S(:,2));
 [X1,X2] = meshgrid(x1,x2);
@@ -61,7 +62,7 @@ likfunc = @likGauss;              % Gaussian likelihood
 
 hyp = struct('mean', [], 'cov', [0 0], 'lik', -1);
 
-hyp2 = minimize(hyp, @gp, -100, @infGaussLik, meanfunc, covfunc, likfunc, x, y);
+hyp2 = minimize(hyp, @gp, -50, @infGaussLik, meanfunc, covfunc, likfunc, x, y);
 
 [mu s2] = gp(hyp2, @infGaussLik, meanfunc, covfunc, likfunc, x, y, x_test);
 

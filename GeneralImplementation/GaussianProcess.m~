@@ -12,7 +12,7 @@ function [mean,stdev,y] = GaussianProcess(mdp,X,actions, params)
 % fnplt(fp)
 % dotX = fnval(fp,t);
 % y = dotX' - (1/(params.m*params.l)*actions+params.g/params.l*sin(X(:,1)));
-% x = X;
+
 
 % HIGHER ORDER APPOX
 %  x_plusone = rungekutta(X(end,:), actions(end), params);
@@ -39,18 +39,18 @@ function [mean,stdev,y] = GaussianProcess(mdp,X,actions, params)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-dotX = (-X(5:5:end,:)+8*X(4:5:end-1,:)-8*X(2:5:end-3,:)+X(1:5:end-4,:))/(12*params.h);
-y = dotX(:,2)- (1/(params.m*params.l)*actions+params.g/params.l*sin(X(3:5:end-2,1)));
-
-x = X(3:5:end,:);
+% dotX = (-X(5:5:end,:)+8*X(4:5:end-1,:)-8*X(2:5:end-3,:)+X(1:5:end-4,:))/(12*params.h);
+% y = dotX(:,2)- (1/(params.m*params.l)*actions+params.g/params.l*sin(X(3:5:end-2,1)));
+% 
+% x = X(3:5:end,:);
 
 % 
-% dotX = (X(2:2:end,:)-X(1:2:end-1,:))/params.h;
+% dotX = (X(2:2:end)-X(1:2:end-1))/params.h;
 % y = dotX(:,2) - (1/(params.m*params.l)*actions+params.g/params.l*sin(X(1:2:end-1,1)));
 % 
 % x = X(1:2:end-1,:);
 
-% dotX = (X(3:3:end,:)-X(1:3:end-2,:))/(2*params.h);
+% dotX = (X(3:3:end)-X(1:3:end-2))/(2*params.h);
 % y = dotX(:,2) - (1/(params.m*params.l)*actions+params.g/params.l*sin(X(2:3:end-1,1)));
 % 
 % x = X(2:3:end-1,:);
@@ -67,7 +67,7 @@ likfunc = @likGauss;              % Gaussian likelihood
 
 hyp = struct('mean', [], 'cov', [0 0], 'lik', -1);
 
-hyp2 = minimize(hyp, @gp, -100, @infGaussLik, meanfunc, covfunc, likfunc, x, y);
+hyp2 = minimize(hyp, @gp, -30, @infGaussLik, meanfunc, covfunc, likfunc, x, y);
 
 [mu, s2] = gp(hyp2, @infGaussLik, meanfunc, covfunc, likfunc, x, y, x_test);
 
