@@ -57,7 +57,7 @@ for i = 1:episodes
     x = [x1,x2];
     R = 0;
     cum_reward= 0;
-    state = discretize(x, mdp.S);
+    state = discr(x, mdp.S);
     
     for j = 1:steps
         
@@ -67,7 +67,7 @@ for i = 1:episodes
         visited(state,action) = visited(state,action)+1;
         %apply control
         x_prime = rungekutta(x, u, pendulum.params);
-        s_prime = discretize(x_prime, mdp.S);
+        s_prime = discr(x_prime, mdp.S);
         
         R = mdp.R(state,action);
         cum_reward = cum_reward + R;

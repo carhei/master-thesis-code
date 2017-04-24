@@ -49,7 +49,7 @@ visited = ones(size(mdp.S,1),size(mdp.A,1));
 while n<5e4% norm(abs(theta-theta_prev))>= 0.001
     n = n+1;
     phi = rbf(x, xmean, xsigma);
-    state = discretize(x, mdp.S);
+    state = discr(x, mdp.S);
     if rand > epsilon
         [v, action] = max(theta'*phi);
     else

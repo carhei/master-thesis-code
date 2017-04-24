@@ -16,7 +16,7 @@ for s = 1:size(S,1)
             action = A(a,:);
             next_state = rungekutta(state, action, params);
             
-            index_next_state = discretize(next_state, S);           
+            index_next_state = discr(next_state, S);           
             transitions{s}(i,a) = index_next_state;
         end
     end

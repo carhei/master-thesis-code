@@ -7,7 +7,7 @@ x = [-pi+0.1, 0];
 states = [];
 for i = 1:100
     
-    state_index = discretize(x, mdp.S);
+    state_index = discr(x, mdp.S);
     action = mdp.A(policy(state_index));  
     disp(x)
     x = rungekutta(x, action, params);

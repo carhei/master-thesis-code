@@ -5,7 +5,7 @@ function  [dx] = sys_safeControl(t, x, states, params, u_opt_array, d_opt_array)
     g = params.g;
 %     b = params.b;
   
-    state_index = discretize(x', states);
+    state_index = discr(x', states);
     u_opt = u_opt_array(state_index);
     d_opt = d_opt_array(state_index);
     

@@ -1,4 +1,4 @@
-function index_discrete_state = discretize(state, S)
+function index_discrete_state = discr(state, S)
 %DISCRETIZE Summary of this function goes here
 %   Detailed explanation goes here
    

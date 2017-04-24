@@ -7,7 +7,7 @@ function  [dx, action] = sys(t, x, mdp, params, policy)
 %     noise = params.std*randn();    
 noise = params.noise;
   
-    state_index = discretize(x', mdp.S);
+    state_index = discr(x', mdp.S);
     action = mdp.A(policy(state_index));
     
     

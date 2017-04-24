@@ -1,5 +1,4 @@
-function [data, u_opt] = safeController(mdp, pendulum, Dmin, Dmax, init, SafeFigure)
-
+function [data, u_opt, g] = safeController(mdp, pendulum, Dmin, Dmax, init)
 
 % Copyright 2004 Ian M. Mitchell (mitchell@cs.ubc.ca).
 % This software is used, copied and distributed under the licensing
@@ -39,9 +38,9 @@ displayType = 'contour';
 % Pause after each plot?
 pauseAfterPlot = 0;
 % Delete previous plot before showing next?
-deleteLastPlot = 0;
+deleteLastPlot = 1;
 % Plot in separate subplots (set deleteLastPlot = 0 in this case)?
-useSubplots = 1;
+useSubplots = 0;
 
 %---------------------------------------------------------------------------
 % Approximately how many grid cells?
@@ -158,7 +157,7 @@ if(useSubplots)
     subplot(rows, cols, plotNum);
 end
 
-h = visualizeLevelSet(g, data, displayType, level, [ 't = ' num2str(t0) ]);
+% h = visualizeLevelSet(g, data, displayType, level, [ 't = ' num2str(t0) ]);
 
 hold on;
 axis(g.axis);
@@ -192,14 +191,14 @@ while(tMax - tNow > small * tMax)
         pause;
     end
     
-    % Get correct figure, and remember its current view.
-    figure(SafeFigure);
-    [ view_az, view_el ] = view;
-    
+%     % Get correct figure, and remember its current view.
+%     figure(SafeFigure);
+%     [ view_az, view_el ] = view;
+%     
     % Delete last visualization if necessary.
-    if(deleteLastPlot)
-        delete(h);
-    end
+%     if(deleteLastPlot)
+%         delete(h);
+%     end
     
     % Move to next subplot if necessary.
     if(useSubplots)
@@ -208,11 +207,11 @@ while(tMax - tNow > small * tMax)
     end
     
     % Create new visualization.
-    h = visualizeLevelSet(g, data, displayType, level, [ 't = ' num2str(tNow) ]);
-    
-    % Restore view.
-    view(view_az, view_el);
-    
+%     h = visualizeLevelSet(g, data, displayType, level, [ 't = ' num2str(tNow) ]);
+%     
+%     % Restore view.
+%     view(view_az, view_el);
+%     
 end
 
 endTime = cputime;

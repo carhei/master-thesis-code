@@ -67,7 +67,7 @@ cum_reward = 0;
 % while max(abs(V-V_prev)) >= epsilon &&  i~=415
 % for episode = 1:10000
     x = [0, 0.1];
-    state = discretize(x, S);
+    state = discr(x, S);
     
     for steps = 1:1e5
         
@@ -77,7 +77,7 @@ cum_reward = 0;
         r = R(state,action);
         cum_reward = cum_reward+r;
         x_prime = rungekutta(x, u, pendulum.params);
-        s_prime = discretize(x_prime, mdp.S);
+        s_prime = discr(x_prime, mdp.S);
         
         if LEARN(state,action)
             U(state,action) = U(state,action) + r + gamma * max(Q(s_prime, :), [], 2);

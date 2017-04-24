@@ -61,7 +61,7 @@ for i = 1:episodes
     cum_reward= 0;
     goal = 0;
     
-    state = discretize(x, mdp.S);
+    state = discr(x, mdp.S);
     
     
     
@@ -88,7 +88,7 @@ for i = 1:episodes
         
         cum_reward = cum_reward + R;
         
-        s_prime = discretize(x_prime, mdp.S);
+        s_prime = discr(x_prime, mdp.S);
         
         Q(state,action) =  Q(state,action) + alpha * ( R + gamma*max(Q(s_prime,:),[],2) - Q(state,action) );
         
