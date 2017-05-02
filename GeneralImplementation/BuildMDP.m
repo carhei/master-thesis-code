@@ -87,7 +87,7 @@ if strcmp(system.reward.type,'quadratic')
     
 else if strcmp(system.reward.type,'exponential')
         sigma = 0.5*(system.grid.state_bounds(2,2)-system.grid.state_bounds(2,1));
-        R = 1-(1-exp(-sum(abs(S).^2,2)/(sigma^2)));
+        R = exp(-sum(abs(S).^2,2)/(sigma^2));
         R = R*ones(1,size(A,1));
         
         % %        S(S(:,1)>pi) || S(1)<-pi || x_prime(2)>4 || x_prime(2)<-4

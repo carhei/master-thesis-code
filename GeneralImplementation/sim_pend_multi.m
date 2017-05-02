@@ -1,6 +1,6 @@
 
 test.nSim = 16;
-test.duration = 4;
+test.duration = 10;
 test.nTime = ceil(test.duration/pendulum.params.h);
 test.t = linspace(0,test.duration,test.nTime);
 test.x10 = pendulum.grid.state_bounds(1,1) + diff(pendulum.grid.state_bounds(1,:))*rand(1,test.nSim);

@@ -44,7 +44,7 @@ function [mean,stdev,y] = GaussianProcess(mdp,X,u, params)
 
 % 
 dotX = (X(2:2:end,:)-X(1:2:end-1,:))/params.h;
-y = dotX(:,2) - (1/(params.m*params.l)*u+params.g/params.l*sin(X(1:2:end-1,1)));
+y = dotX(:,2) - (1/(params.m*params.l^2)*u+params.g/params.l*sin(X(1:2:end-1,1))-params.b/params.m*X(1:2:end-1,2));
 
 x = X(1:2:end-1,:);
 % 

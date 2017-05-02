@@ -16,7 +16,7 @@ D_MAX = max(abs(Dmin),abs(Dmax));
 
 %---------------------------------------------------------------------------
 % Integration parameters.
-tMax = 10;                  % End time.
+tMax = 40;                  % End time.
 plotSteps = 6;               % How many intermediate plots to produce?
 t0 = 0;                      % Start time.
 singleStep = 0;              % Plot at each timestep (overrides tPlot).
@@ -62,7 +62,7 @@ g = processGrid(g);
 
 %---------------------------------------------------------------------------
 % Create initial conditions (cylinder centered on origin).
-data = shapeComplement(shapeRectangleByCenter(g, [0;0], [init;2*mdp.S(end,2)]));
+data = shapeComplement(shapeRectangleByCenter(g, [0;0], [init;mdp.S(end,2)]));
 % data = shapeComplement(shapeSphere(g, [ 0; 0 ], initRadius));
 % data = shapeDifference(dataX,dataY);
 % data = shapeSphere(g, [ 0; 0 ], targetRadius);
@@ -87,6 +87,7 @@ schemeData.D_max = Dmax;
 schemeData.g = pendulum.params.g;
 schemeData.m = pendulum.params.m;
 schemeData.l = pendulum.params.l;
+schemeData.b = pendulum.params.b;
 %---------------------------------------------------------------------------
 % Choose degree of dissipation.
 
@@ -251,8 +252,8 @@ minD = (deriv{2}<=0).*schemeData.D_max+(deriv{2}>0).*schemeData.D_min;
 
 
 hamValue = -(grid.xs{2}.* deriv{1} ...
-    + schemeData.g/schemeData.l*sin(grid.xs{1}).* deriv{2} ...
-    + 1/(schemeData.m*schemeData.l)*schemeData.U_MAX * abs(deriv{2}) ...
+    + schemeData.g/schemeData.l*sin(grid.xs{1}).* deriv{2} - schemeData.b/schemeData.m*grid.xs{2}.* deriv{2} ...
+    + 1/(schemeData.m*schemeData.l^2)*schemeData.U_MAX * abs(deriv{2}) ...
     + minD.*deriv{2});
 
 global u_opt
@@ -296,7 +297,7 @@ switch dim
         alpha = abs(grid.xs{2});
         
     case 2
-        alpha = schemeData.g/schemeData.l*abs(sin(grid.xs{1}))+ 1/(schemeData.m*schemeData.l)* schemeData.U_MAX + schemeData.D_MAX;
+        alpha = schemeData.g/schemeData.l*abs(sin(grid.xs{1}))+schemeData.b/schemeData.m*abs(grid.xs{2})+ 1/(schemeData.m*schemeData.l^2)* schemeData.U_MAX + schemeData.D_MAX;
         
         
     otherwise

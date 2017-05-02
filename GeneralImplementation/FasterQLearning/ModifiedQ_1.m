@@ -11,6 +11,7 @@ pendulum.nstates = 2;
 pendulum.params.g = 9.81;               % gravity constant
 pendulum.params.m = 1;                  % mass of pendulum
 pendulum.params.l = 1;                  % length of pendulum
+pendulum.params.b = 0.2;                  % length of pendulum
 pendulum.params.h_safe = 0.005;                % sample time
 pendulum.params.h_learn = 0.2;
 pendulum.params.h= pendulum.params.h_learn;
@@ -39,7 +40,7 @@ mdp = BuildMDP(pendulum);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 count = 1;
-maxcount =4;
+maxcount = 3;
 rows = ceil(sqrt(maxcount));
 cols = ceil(maxcount / rows);
 GPfigure=figure;
@@ -50,8 +51,8 @@ Simulation = figure;
 %====================================
 % Initialize Safe Set Calculation
 
-d0 = 3;                                %conservative disturbance estimate
-init = 0.8*pi;
+d0 = 3.0;                                %conservative disturbance estimate
+init = 0.5*pi;
 dMax = d0*ones(x1_steps, x2_steps);
 dMin = -dMax;
 safeStates = cell(1,maxcount);
@@ -61,13 +62,27 @@ safeControl = cell(1,maxcount);
 
 alpha       = 1;   % learning rate
 gamma       = 0.9;   % discount factor
-epsilon     = 0.5;  % probability of a random action selection
-Q = max(max(mdp.R))/(1-gamma)*ones(size(mdp.S,1), size(mdp.A,1));
-Q_prev = Q;
-steps = 40000;
+epsilon     = 0.1;  % probability of a random action selection
+steps = 12000;
 vecV = zeros(pendulum.grid.state_steps(1)*pendulum.grid.state_steps(2),steps*maxcount);
 visited = zeros(size(mdp.S,1), size(mdp.A,1));
 chosesafe = cell(1,maxcount);
+
+
+epstarget = 0.01;
+epsilon_1 = 0.0001;
+m_0 = 5;
+% Optimistic initialization
+Q = max(max(mdp.R))/(1-gamma)*ones(size(mdp.S,1), size(mdp.A,1));%+ .01*rand(size(mdp.S,1), size(mdp.A,1));
+
+
+U = zeros(size(mdp.S,1), size(mdp.A,1));
+B = zeros(size(mdp.S,1), size(mdp.A,1));
+C = zeros(size(mdp.S,1), size(mdp.A,1));
+L = ones(size(mdp.S,1), size(mdp.A,1));
+m = m_0*ones(size(mdp.S,1), size(mdp.A,1));
+t_star = 0;
+
 %====================================
 % Initialize Gaussian Process
 
@@ -93,10 +108,8 @@ while count <=maxcount
     drawnow;
     safeStates{count} = S0>0;
     safeControl{count} = u_opt(:);
-    if sum(safeStates{count}) == 0
-        error('No safe set available!!')
-    end
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % SAFE SPEEDY Q-LEARNING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
@@ -112,20 +125,25 @@ while count <=maxcount
             unsafe = 0;
         end
     end
-    R = 0;
     
     if count > 1
         reset = 1;
     else
         reset = 0;
-    end    
-    for j = 1:steps
+    end
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %                                Main Loop
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    for n=1:steps-1
+        
         action = egreedy(state,epsilon,Q);
         u_learn = mdp.A(action);
         pendulum.params.h = pendulum.params.h_safe;
         state_t = state;
         for k = 1:ratio
-            %Safety loop
+%             Safety loop
             if safeStates{count}(state)
                 u = u_learn;
             else
@@ -134,33 +152,57 @@ while count <=maxcount
                 chosesafe{count}(state,safeaction) = chosesafe{count}(state,safeaction)+1;
             end
             if reset
-                states(k + ratio*((j-1)+steps*(count-1)),:) = [NaN NaN];
-                actions(k + ratio*((j-1)+steps*(count-1))) = NaN;
+                states(k + ratio*((n-1)+steps*(count-1)),:) = [NaN NaN];
+                actions(k + ratio*((n-1)+steps*(count-1))) = NaN;
                 reset = 0;
             else
-                states(k + ratio*((j-1)+steps*(count-1)),:) = x;
-                actions(k + ratio*((j-1)+steps*(count-1))) = u;
+                states(k + ratio*((n-1)+steps*(count-1)),:) = x;
+                actions(k + ratio*((n-1)+steps*(count-1))) = u;
             end
             x = rungekutta(x, u, pendulum.params);
             state = discr(x, mdp.S);
         end
         pendulum.params.h = pendulum.params.h_learn;
+        
         visited(state_t,action) = visited(state_t,action)+1;
-        %apply control
+%         apply control
         x_prime = x;
         s_prime = state;
-        if safeStates{count}(state_t)
-            R = mdp.R(state_t,action)/(1+visited(state_t,action));
-        else
-            R = -1;
-        end
-        temp = Q;
-        Q(state_t,action) =  Q(state_t,action) + alpha/visited(state_t,action) * ( R + gamma*max(Q_prev(s_prime,:)) - Q(state_t,action) )+ ...
-            (1-alpha/visited(state_t,action)) * ( R + gamma*max(Q(s_prime,:)) - R - gamma*max(Q_prev(s_prime,:)));
         
+        if B(state_t, action) <= t_star
+            L(state_t, action) = 1;
+        end
+        
+        if L(state_t, action) == 1
+            if C(state_t, action) == 0
+                B(state_t, action) = n;
+            end
+            if safeStates{count}(state_t)
+                R = mdp.R(state_t,action);%+ 1/(1+visited(state_t,action));
+            else
+                R = -1;
+            end
+            C(state_t, action) = C(state_t, action) + 1;
+            U(state_t, action) = U(state_t, action) + R + gamma*max(Q(s_prime, :));
+            
+            if C(state_t, action) == m(state_t, action)
+                q = U(state_t, action)./m(state_t, action);
+                if abs(Q(state_t, action) - q) >= epsilon_1
+                    Q(state_t, action) = q;
+                    t_star = n;
+                elseif B(state_t, action) > t_star
+                    fprintf('Discarding update.\n');
+                    L(state_t, action) = 0;
+                end
+                
+                U(state_t, action) = 0;
+                C(state_t, action) = 0;
+                m(state_t, action) = ceil(min(1.02*m(state_t, action) + 1, 500));
+                epsilon_1 = min(epsilon_1*1.1, epstarget);
+            end
+        end
         state = s_prime;
-        x = x_prime;
-        Q_prev = temp;
+        
         if abs(x') <= 1.05* pendulum.grid.state_bounds(:,2)
             x = x_prime;
         else
@@ -176,30 +218,30 @@ while count <=maxcount
                 end
             end
         end
-        
         V = max(Q,[],2);
-        vecV(:,j+steps*(count-1)) = V;
-        if mod(j,1000)==0
-            disp(['Episode ' num2str(j)])
+        vecV(:,n+steps*(count-1)) = V;
+        if mod(n,1000)==0
+            disp(['Episode ' num2str(n)])
         end
     end
+    
     fprintf('.....Calculating logarithmic error......\n')
     opt_params.gamma = gamma;
     opt_params.epsilon = 0.0001;
     
-    [policy_true, n, v0_vec] = valueiteration(mdp, opt_params);
+    [policy_true, p, v0_vec] = valueiteration(mdp, opt_params);
     
     figure(SpeedyFigure)
     safe_inds = find(safeStates{count}>0);
     subplot(rows, cols, count)
     for i = 1:size(safe_inds)
-        semilogy(abs(v0_vec(safe_inds(i),end)-vecV(safe_inds(i),1:j+steps*(count-1))))
+        semilogy(abs(v0_vec(safe_inds(i),end)-vecV(safe_inds(i),1:n+steps*(count-1))))
         hold all
     end
     title('Error Speedy Q Learning')
     xlabel('Episodes')
     ylabel('Error')
-    xlim([0; j+steps*(count-1)])
+    xlim([0; n+steps*(count-1)])
     drawnow;
     
     fprintf('===========Disturbance Estimation with GP=====================\n')
@@ -219,15 +261,15 @@ while count <=maxcount
     actionsGP = actionsGP(:);
     
     fprintf('.....Calculating Gaussian Process......\n')
-    [m, s, disturbance] = GaussianProcess(mdp, statesGP, actionsGP,pendulum.params);
+    [mean, std, disturbance] = GaussianProcess(mdp, statesGP, actionsGP,pendulum.params);
     
     figure(GPfigure)
     subplot(rows, cols, count)
-    surf(x1,x2',m)
+    surf(x1,x2',mean)
     hold all
     plot3(statesGP(1:2:end-1,1),statesGP(2:2:end,2),disturbance,'o')
-    surf(x1,x2,m+2*sqrt(reshape(s,sqrt(length(mdp.S)),sqrt(length(mdp.S)))))
-    surf(x1,x2,m-2*sqrt(reshape(s,sqrt(length(mdp.S)),sqrt(length(mdp.S)))))
+    surf(x1,x2,mean+2*sqrt(reshape(std,sqrt(length(mdp.S)),sqrt(length(mdp.S)))))
+    surf(x1,x2,mean-2*sqrt(reshape(std,sqrt(length(mdp.S)),sqrt(length(mdp.S)))))
     title('GP posterior')
     xlabel('x1')
     ylabel('x2')
@@ -235,8 +277,8 @@ while count <=maxcount
     drawnow;
     count = count+1;
     
-    dMax=  0.5+(m+3*sqrt(s));
-    dMin = -0.5+(m-3*sqrt(s));
+    dMax=  0.5+(mean+3*sqrt(std));
+    dMin = -0.5+(mean-3*sqrt(std));
 end
 
 
@@ -247,7 +289,7 @@ Policy = figure;
 
 marker = 90*ones(size(policy_true));
 
-figure(Policy); clf; colormap('jet')
+figure(Policy); clf;colormap('jet')
 xlabel('angle (rad)')
 ylabel('rate (rad/s)')
 zlabel('torque (Nm)')
@@ -276,9 +318,8 @@ end
 figure(Simulation)
 hold all
 for i = 1:length(trajectories)
-plot(trajectories{i}(:,1),trajectories{i}(:,2))
-plot(trajectories{i}(1,1),trajectories{i}(1,2),'r.', 'MarkerSize',15);
-plot(trajectories{i}(end,1),trajectories{i}(end,2),'k.', 'MarkerSize',15);
+    plot(trajectories{i}(:,1),trajectories{i}(:,2))
+    plot(trajectories{i}(1,1),trajectories{i}(1,2),'r.', 'MarkerSize',15);
+    plot(trajectories{i}(end,1),trajectories{i}(end,2),'k.', 'MarkerSize',15);
 end
-line([-pi/2 -pi/2], [-8.3 8.3]); 
-line([pi/2 pi/2], [-8.3 8.3]); 
+    contour(g.xs{1}, g.xs{2}, S0, [0,0], 'r');
