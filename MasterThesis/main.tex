@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt]{kth-mag}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[]{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{subfiles}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{color}  
+
+\graphicspath{{Images/}{../Images/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
+
+
+\title{Safe Learning for Control}
+\author{Caroline Heidenreich}
+\date{May 2017}
+\blurb{Master's Degree Project at the department of Automatic Control\\Supervisor: Sadegh Talebi\\Examiner: Mikael Johansson}
+
+
+
+\begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\maketitle
+
+\chapter{Introduction}\label{sec:Introduction}
+\subfile{Chapters/Introduction}
+
+\chapter{Theoretical Background}
+\subfile{Chapters/TheoreticalBackground}
+
+
+\chapter{Related Work}
+\subfile{Chapters/RelatedWork}
+
+\chapter{Solution Architecture}\label{sec:SolutionArchitecture}
+\subfile{Chapters/SolutionArchitecture}
+
+\chapter{Implementation}\label{sec:Implementation}
+\subfile{Chapters/Implementation}
+
+\chapter{Results}
+\subfile{Chapters/Results}
+
+\chapter{Conclusions}
+\subfile{Chapters/Conclusions}
+
+
+\bibliography{bibliography}
+\bibliographystyle{abbrv}
+
+\end{document}

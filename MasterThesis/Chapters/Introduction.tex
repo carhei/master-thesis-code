@@ -1,0 +1,5 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+Applying methods from the field of machine learning to control problems is a promising approach. Many traditional control strategies rely on a model of the system that should be controlled. As models usually reflect only parts of the reality, those approaches often suffer from poor model accuracy. Learning the control online by employing standard Reinforcement Learning methods such as Q-Learning overcomes the shortcomings of traditional model-based control techniques. The problem with applying Reinforcement Learning methods to control problems is however that those methods learn in a trial-and-error fashion and are therefore not designed to satisfy constraints during the learning process. Safety critical control applications are therefore not feasible in this framework. A workaround is to assume some knowledge about the system and worst-case disturbances to design a safety-preserving controller that acts when the learning algorithm would cause a constraint violation. The disturbance bounds can then be updated iteratively by applying statistical modelling tools to obtained data. 
+\end{document}

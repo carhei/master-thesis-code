@@ -1,0 +1,22 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+The idea of improving the control of a system online is not a recent one. There are two main strategies that researchers have been following. Firstly, data can be used to improve the model of the system online. This approach has already been pursued in the field of Indirect Adaptive Control. More recently, Gaussian processes have been proven to be a valuable tool for nonlinear modelling \cite{murphy2012machine}. Secondly, learning methods can also be used to directly learn a control for a given system. An early example of this approach is Iterative Learning Control \cite{aastrom2013adaptive}. While this technique is constrained to a predefined repetitive reference trajectory, Reinforcement Learning techniques such as Q-learning can be applied to a broad range of control problems \cite{sutton1998reinforcement}.
+
+An example for an early contribution to this matter is the article of Wang et. al. on stable adaptive fuzzy control \cite{wang1993stable}. The proposed method assumes that the state space is on a special form
+\begin{equation}
+    x^{(n)} = f(x, \dot{x}, ..., x^{(n-1)})+bu, \qquad y=x
+\end{equation}
+with a unknown continuous function $f$ and an unknown constant $b$. A way is then presented on how to update the singleton parameters $\theta$ of a fuzzy controller
+\begin{equation}
+    u_c(x) = \theta^T \varepsilon(x)
+\end{equation}
+with fuzzy basis functions $\varepsilon(x)$. Assuming boundaries on $b$ and $f$ a supervisory controller that ensures stability is further introduced. The approach can only be applied to the above explained restricted framework but realizes some early form of "safe learning for control".
+
+Further algorithms have been proposed in recent years. This thesis will mainly focus on the approach proposed in \cite{akametalu2014reachability}. The approach assumes an unknown state-dependent disturbance $d(x)$ that is added to the known parts of the system dynamics $h(x)$ and $g(x)$:
+\begin{equation}
+    \dot{x} = h(x)+g(x)u+d(x).
+\end{equation}
+Assuming upper bounds on the disturbance a safe set can be calculated using Hamilton-Jacobi-Isaacs (HJI) reachability analysis. Starting from the conservative upper bound the disturbance estimate is iteratively improved, leading to an increasing safe set. For states inside the safe set, a control is found with the learning algorithm Policy Gradient via the Signed Derivative (PGSD). Otherwise, a safe control that attempts to drive the system to the safest state possible is applied. In the objective function of the PGSD a term is included to reduce switching between the safe and the learning control.
+Compared to \cite{wang1993stable}, this approach poses less restrictions on the form of the state space. An issue with the approach in \cite{akametalu2014reachability} is that exploration is not handled explicitly. This means that the algorithm does not encourage the acquisition of new knowledge about the state space. On the contrary, it discourages the system from taking exploratory actions towards the borders of the safe set. This conflicts with the goal of increasing the safe set as the disturbance estimate will remain uncertain in regions with no or few samples. 
+\end{document}
