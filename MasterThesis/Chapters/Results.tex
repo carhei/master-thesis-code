@@ -3,7 +3,7 @@
 \begin{document}
 In this section, some results from the implementation of the approach described in \ref{sec:SolutionArchitecture} will be shown. The inverted pendulum system has been modelled as a MDP with $x_1\in [-\frac{\pi}{2}, \frac{\pi}{2}] $ and $x_2 \in [-5\, \frac{\text{rad}}{s},5 \,\frac{\text{rad}}{s}] $. The state space has been discretised with $19$ steps in both dimensions and the action space has been discretised with $5$ steps on the range $u \in [-25\,\text{N},25\,\text{N}] $. The time step for the learning loop is chosen as $h_\text{learn} = 0.2\text{ s}$ and $h_\text{safe} = 0.005\,\text{s}$. The true disturbance introduced to the system is chosen to be $d = 0.5\sin(5x_1)$ and initially bounded conservatively with $\overline{d}_0 = 10 \,\text{N}$ and $\underline{d}_0 = -10 \,\text{N}$. The safe region $\mathcal{S}_0$ is a rectangle centered around the origin with width $0.9\pi$ in $x_1$-direction and width $10\frac{\text{rad}}{s}$ in $x_2$-direction. In each iteration the set is calculated for $\tau = 40\,\text{s}$.
 
-In the following, the results from four learning iterations at each $10,000$ steps will be presented. After each iteration a new disturbance estimation and safe set calculation is done. As described in section \ref{sec:Exploration}, it is crucial for the disturbance and policy estimation that all states within the safe set have been visited sufficiently often. A method for structured exploration, Incremental Q-learning, has been introduced. In this section, the results from incorporating exploration will be compared to those yielded from the approach without structured exploration. 
+In the following, the results from four learning iterations at each $10,000$ steps will be presented. After each iteration a new disturbance estimation and safe set calculation is done. As described in Section \ref{sec:Exploration}, it is crucial for the disturbance and policy estimation that all states within the safe set have been visited sufficiently often. A method for structured exploration, Incremental Q-learning, has been introduced. In this section, the results from incorporating exploration will be compared to those yielded from the approach without structured exploration. 
 
 To begin with, we look at the distribution of $1000$ random samples drawn from the recorded samples of all four iterations. Figure \ref{fig:samples_exploration} shows the sampling results of the algorithm with exploration compared to the one without exploration. 
 
@@ -21,7 +21,7 @@ To begin with, we look at the distribution of $1000$ random samples drawn from t
 
 It can clearly be seen that the samples are a lot more wide-spread, if exploration is done. Without exploration, the learning algorithm always decides for the action that is most promising in order to keep the system close to the origin. This causes a concentration of samples around this point that might inhibit both the disturbance estimation and the policy learning at the edges of the safe set. 
 
-It is therefore interesting to compare, if Incremental Q-learning as described in section \ref{sec:Exploration} yields a better estimation of the policy. The results of this comparison are shown in figure \ref{fig:policy_exploration}. The figure shows the estimated policy from each state, where the respective colors correspond to values of $u$. Because the action values are not really decisive, it has been decided to not show a legend that matches colors to values. Instead, the quality of the estimated policy can be decided upon by comparing to the optimal policy that has been found with Policy Iteration (left figure). Clearly, the results are better for the approach that incorporates exploration. This can especially seen at the edges of the safe set where the estimated policy without exploration is very inaccurate (right figure).
+It is therefore interesting to compare, if Incremental Q-learning as described in Section \ref{sec:Exploration} yields a better estimation of the policy. The results of this comparison are depicted in Figure \ref{fig:policy_exploration}. The figure shows the estimated policy from each state, where the respective colors correspond to values of $u$. Because the action values are not really decisive, it has been decided to not show a legend that matches colors to values. Instead, the quality of the estimated policy can be decided upon by comparing to the optimal policy that has been found with Policy Iteration (left figure). Clearly, the results are better for the approach that incorporates exploration. This can especially seen at the edges of the safe set where the estimated policy without exploration is very inaccurate (right figure).
 
 \begin{figure}
     \centering
@@ -29,7 +29,7 @@ It is therefore interesting to compare, if Incremental Q-learning as described i
     \caption{Policy estimated with and without exploration. After the same number of learning iterations, the algorithm with exploration achieves considerably better results above all at the edges of the safe set.} \label{fig:policy_exploration}
 \end{figure}
 
-To quantify the findings from figure \ref{fig:policy_exploration}, the absolute error between the estimated and the optimal policy is illustrated in \ref{fig:PolicyError}. In addition to the algorithm without exploration and with Incremental Q-learning, the error with $\epsilon$-greedy exploration is shown. It can be seen that the Incremental Q-learning approach takes slightly longer to converge but achieves a remarkably better result. It becomes also clear that the deterministic approach to exploration, Incremental Q-learning, pays off in comparison to the randomized $\epsilon$-greedy exploration. 
+To quantify the findings from Figure \ref{fig:policy_exploration}, the absolute error between the estimated and the optimal policy is illustrated in \ref{fig:PolicyError}. In addition to the algorithm without exploration and with Incremental Q-learning, the error with $\epsilon$-greedy exploration is shown. It can be seen that the Incremental Q-learning approach takes slightly longer to converge but achieves a remarkably better result. It becomes also clear that the deterministic approach to exploration, Incremental Q-learning, pays off in comparison to the randomized $\epsilon$-greedy exploration. 
 
 \begin{figure}[h]
     \centering
@@ -61,14 +61,14 @@ Figure \ref{fig:SafeSet_it4_unexplore} shows the safe set computations for all f
         \caption{Safe set computation in four iterations. The better disturbance estimate causes an increase in the safe states already after the first iteration.}  \label{fig:SafeSet_it4_unexplore}
 \end{figure}
 
-Interestingly, the safe set resulting from the disturbance estimate is the same without and with exploration. The result for all four iterations can be seen in figure \ref{fig:SafeSet_it4_unexplore}. After the first iteration the safe set increases due to the improved estimate. From the second iteration onwards, the set remains the same. A reason for this behaviour might be that the safe set is a over-approximation of the true safe set that not necessarily increases as the disturbance bounds decrease. This claim gets supported by the fact that the safe set remains the same even if a disturbance of $d = 0\,\text{N}$ is assumed.\par
+Interestingly, the safe set resulting from the disturbance estimate is the same without and with exploration. The result for all four iterations can be seen in Figure \ref{fig:SafeSet_it4_unexplore}. After the first iteration the safe set increases due to the improved estimate. From the second iteration onwards, the set remains the same. A reason for this behaviour might be that the safe set is a over-approximation of the true safe set that not necessarily increases as the disturbance bounds decrease. This claim gets supported by the fact that the safe set remains the same even if a disturbance of $d = 0\,\text{N}$ is assumed.\par
 
-Finally, simulation results from both approaches are shown in figure \ref{fig:Simulation}.
+Finally, simulation results from both approaches are portrayed in Figure \ref{fig:Simulation}. The depicted trajectories show the last $500,000$ samples that have been recorded with $h_\text{safe} = 0.005\,\text{s}$. It becomes clear that the algorithm with exploration causes the system to explore the whole state space and repeatedly hit the borders of the safe set. The approach without exploration manages to keep the system close to the origin. 
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Simulation}
-        \caption{Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.}  \label{fig:Simulation}
+        \caption{Simulation of the system with Incremental Q-learning versus simulation without exploration.}\label{fig:Simulation}
 \end{figure}
 
 \end{document}
