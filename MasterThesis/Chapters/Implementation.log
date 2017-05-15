@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  11 MAY 2017 08:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  11 MAY 2017 15:46
 entering extended mode
-**Results.tex
-(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters\Results.tex
+**Implementation.tex
+
+(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters\Implementation.t
+ex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 68 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfiles\subfiles.cls"
@@ -31,10 +33,10 @@ l.2 \usepackage
  
 Here is how much of TeX's memory you used:
  60 strings out of 493705
- 1401 string characters out of 3142156
+ 1436 string characters out of 3142156
  52149 words of memory out of 3000000
  3466 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 18i,0n,17p,166b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,0n,17p,174b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

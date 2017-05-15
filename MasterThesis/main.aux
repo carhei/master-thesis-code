@@ -36,16 +36,23 @@
 \newlabel{eq:hamil}{{\M@TitleReference {2.31}{Safe Set Computations based on Reachability Analysis}}{13}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The backwards reachable set $\mathcal  {T}_\tau $ is the set from which trajectories can reach the unsafe set within time $\tau $.\relax }}{14}}
 \newlabel{fig:reachable}{{\M@TitleReference {2.2}{The backwards reachable set $\mathcal  {T}_\tau $ is the set from which trajectories can reach the unsafe set within time $\tau $.\relax }}{14}}
-\citation{murphy2012machine}
 \citation{aastrom2013adaptive}
-\citation{sutton1998reinforcement}
 \citation{wang1993stable}
-\citation{akametalu2014reachability}
-\citation{wang1993stable}
-\citation{akametalu2014reachability}
+\citation{aastrom2013adaptive}
+\citation{murphy2012machine}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}Related Work}{15}}
+\citation{akametalu2014reachability}
+\citation{akametalu2014reachability}
+\citation{wang1993stable}
+\citation{wang1993stable}
+\citation{akametalu2014reachability}
+\citation{wang1993stable}
+\citation{wang1993stable}
+\citation{akametalu2014reachability}
+\citation{akametalu2014reachability}
+\citation{wang1993stable}
 \citation{akametalu2014reachability}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
@@ -65,49 +72,52 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Reinforcement Learning}{22}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces \textsc  {Modification of Delayed Q-Learning}\relax }}{23}}
 \newlabel{alg:alg1}{{\M@TitleReference {1}{\textsc  {Modification of Delayed Q-Learning}\relax }}{23}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Safe Set Computations based on Reachability Analysis}{23}}
-\citation{mitchell2004toolbox}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison between the learned policy and the with policy iteration determined optimal policy.\relax }}{24}}
 \newlabel{fig:PolicyComparison_unsafe}{{\M@TitleReference {5.1}{Comparison between the learned policy and the with policy iteration determined optimal policy.\relax }}{24}}
-\newlabel{eq:hamil_implementation}{{\M@TitleReference {5.7}{Safe Set Computations based on Reachability Analysis}}{24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Evolution of the constraint violations over .\relax }}{25}}
-\newlabel{fig:Histogram_ConstraintViolations}{{\M@TitleReference {5.2}{Evolution of the constraint violations over .\relax }}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Evolution of the constraint violations with increasing number of steps.\relax }}{25}}
+\newlabel{fig:Histogram_ConstraintViolations}{{\M@TitleReference {5.2}{Evolution of the constraint violations with increasing number of steps.\relax }}{25}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Safe Set Computations based on Reachability Analysis}{25}}
+\newlabel{eq:hamil_implementation}{{\M@TitleReference {5.7}{Safe Set Computations based on Reachability Analysis}}{25}}
+\citation{mitchell2004toolbox}
 \newlabel{eq:hamil_explicit}{{\M@TitleReference {5.18}{Safe Set Computations based on Reachability Analysis}}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Example for the evolution of a safe set during the time horizon.\relax }}{27}}
-\newlabel{fig:safeSet_example}{{\M@TitleReference {5.3}{Example for the evolution of a safe set during the time horizon.\relax }}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Simulations to verify that all trajectories that start.\relax }}{28}}
-\newlabel{fig:safeSet_simulation}{{\M@TitleReference {5.4}{Simulations to verify that all trajectories that start.\relax }}{28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of the problem with a large time step $h_{\text  {learn}}$. At $t= h_{\text  {learn}}$ the system is without safety check (left) already far outside the safe set so that it cannot be guaranteed to be brought back again. On the right hand side, the same example is shown with a faster running safety loop. Each $h_{\text  {safe}}$ a safety check is performed so that the violation of the safe set can be detected and acted against earlier\relax }}{29}}
-\newlabel{fig:doubleloop}{{\M@TitleReference {5.5}{Illustration of the problem with a large time step $h_{\text  {learn}}$. At $t= h_{\text  {learn}}$ the system is without safety check (left) already far outside the safe set so that it cannot be guaranteed to be brought back again. On the right hand side, the same example is shown with a faster running safety loop. Each $h_{\text  {safe}}$ a safety check is performed so that the violation of the safe set can be detected and acted against earlier\relax }}{29}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Disturbance Estimation with Gaussian Processes}{29}}
-\newlabel{sec:implementation_GP}{{\M@TitleReference {5.4}{Disturbance Estimation with Gaussian Processes}}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Example for the evolution of a safe set during the time horizon.\relax }}{28}}
+\newlabel{fig:safeSet_example}{{\M@TitleReference {5.3}{Example for the evolution of a safe set during the time horizon.\relax }}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Simulations to verify the control invariance of the safe set.\relax }}{29}}
+\newlabel{fig:safeSet_simulation}{{\M@TitleReference {5.4}{Simulations to verify the control invariance of the safe set.\relax }}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of the problem with a large time step $h_{\text  {learn}}$. At $t= h_{\text  {learn}}$ the system is without safety check (left) already far outside the safe set so that it cannot be guaranteed to be brought back again. On the right hand side, the same example is shown with a faster running safety loop. Each $h_{\text  {safe}}$ a safety check is performed so that the violation of the safe set can be detected and acted against earlier.\relax }}{30}}
+\newlabel{fig:doubleloop}{{\M@TitleReference {5.5}{Illustration of the problem with a large time step $h_{\text  {learn}}$. At $t= h_{\text  {learn}}$ the system is without safety check (left) already far outside the safe set so that it cannot be guaranteed to be brought back again. On the right hand side, the same example is shown with a faster running safety loop. Each $h_{\text  {safe}}$ a safety check is performed so that the violation of the safe set can be detected and acted against earlier.\relax }}{30}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Disturbance Estimation with Gaussian Processes}{30}}
+\newlabel{sec:implementation_GP}{{\M@TitleReference {5.4}{Disturbance Estimation with Gaussian Processes}}{30}}
 \citation{Rasmussen:2010:GPM:1756006.1953029}
 \citation{akametalu2014reachability}
 \citation{even2001convergence}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.\relax }}{31}}
-\newlabel{fig:pointchoice}{{\M@TitleReference {5.6}{Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.\relax }}{31}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Exploration}{31}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Disturbance estimation with GP regression for a disturbance. The lower and upper plane bound the $\pm 3\sigma $ confidence interval (shaded in grey). The samples that serve as input to the GP are shown as blue circles. The mean plane can be seen as a thin line in the middle of the confidence interval.\relax }}{32}}
-\newlabel{fig:GP_posterior}{{\M@TitleReference {5.7}{Disturbance estimation with GP regression for a disturbance. The lower and upper plane bound the $\pm 3\sigma $ confidence interval (shaded in grey). The samples that serve as input to the GP are shown as blue circles. The mean plane can be seen as a thin line in the middle of the confidence interval.\relax }}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.\relax }}{32}}
+\newlabel{fig:pointchoice}{{\M@TitleReference {5.6}{Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.\relax }}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Exploration}{32}}
+\newlabel{sec:Exploration}{{\M@TitleReference {5.5}{Exploration}}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Disturbance estimation with GP regression for a disturbance. The lower and upper plane bound the $\pm 3\sigma $ confidence interval (shaded in grey). The samples that serve as input to the GP are shown as blue circles. The mean plane can be seen as a thin line in the middle of the confidence interval. The lower figure shows the rear half of the upper figure to show the uncertainty in the middle of the surface.\relax }}{33}}
+\newlabel{fig:GP_posterior}{{\M@TitleReference {5.7}{Disturbance estimation with GP regression for a disturbance. The lower and upper plane bound the $\pm 3\sigma $ confidence interval (shaded in grey). The samples that serve as input to the GP are shown as blue circles. The mean plane can be seen as a thin line in the middle of the confidence interval. The lower figure shows the rear half of the upper figure to show the uncertainty in the middle of the surface.\relax }}{33}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {6}Results}{35}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Safe Set Computation in four iterations. Clearly, the safe set already converges after the first iteration.\relax }}{35}}
-\newlabel{fig:SafeSet_it4_unexplore}{{\M@TitleReference {6.1}{Safe Set Computation in four iterations. Clearly, the safe set already converges after the first iteration.\relax }}{35}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Logarithmic Error of the learned values compared to the values computed by Value Iteration. Each iteration consists of $10000$ steps.\relax }}{36}}
-\newlabel{fig:Learning_it4_unexplore}{{\M@TitleReference {6.2}{Logarithmic Error of the learned values compared to the values computed by Value Iteration. Each iteration consists of $10000$ steps.\relax }}{36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Gaussian Process regression in four iterations.\relax }}{36}}
-\newlabel{fig:GP_it4_unexplore}{{\M@TitleReference {6.3}{Gaussian Process regression in four iterations.\relax }}{36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Gaussian Process regression in four iterations with incremental Q-learning.\relax }}{37}}
-\newlabel{fig:GP_it4_explore}{{\M@TitleReference {6.4}{Gaussian Process regression in four iterations with incremental Q-learning.\relax }}{37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Random sampling with and without incremental Q-learning. In the upper figure, the spread of the samples is clearly better, whereas in the lower figure most samples are concentrated around the origin.\relax }}{38}}
-\newlabel{fig:samples_exploration}{{\M@TitleReference {6.5}{Random sampling with and without incremental Q-learning. In the upper figure, the spread of the samples is clearly better, whereas in the lower figure most samples are concentrated around the origin.\relax }}{38}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Policy estimation with and without exploration. After the same number of learning iterations, the algorithm with exploration achieves considerably better results above all at the edges of the safe set.\relax }}{39}}
-\newlabel{fig:policy_exploration}{{\M@TitleReference {6.6}{Policy estimation with and without exploration. After the same number of learning iterations, the algorithm with exploration achieves considerably better results above all at the edges of the safe set.\relax }}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Random sampling with and without Incremental Q-learning. In the upper figure, the spread of the samples is clearly better, whereas in the lower figure most samples are concentrated around the origin.\relax }}{36}}
+\newlabel{fig:samples_exploration}{{\M@TitleReference {6.1}{Random sampling with and without Incremental Q-learning. In the upper figure, the spread of the samples is clearly better, whereas in the lower figure most samples are concentrated around the origin.\relax }}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Policy estimated with and without exploration. After the same number of learning iterations, the algorithm with exploration achieves considerably better results above all at the edges of the safe set.\relax }}{37}}
+\newlabel{fig:policy_exploration}{{\M@TitleReference {6.2}{Policy estimated with and without exploration. After the same number of learning iterations, the algorithm with exploration achieves considerably better results above all at the edges of the safe set.\relax }}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Policy error with Incremental Q-learning, $\epsilon $-greedy eploration and without exploration. The approach with Incremental Q-learning converges slightly slower but the final error without exploration is about four times higher than the error of the Incremental Q-learning algorithm.\relax }}{38}}
+\newlabel{fig:PolicyError}{{\M@TitleReference {6.3}{Policy error with Incremental Q-learning, $\epsilon $-greedy eploration and without exploration. The approach with Incremental Q-learning converges slightly slower but the final error without exploration is about four times higher than the error of the Incremental Q-learning algorithm.\relax }}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Number of visits of the ten least visited states with and without exploration respectively.\relax }}{39}}
+\newlabel{fig:leastvisited}{{\M@TitleReference {6.4}{Number of visits of the ten least visited states with and without exploration respectively.\relax }}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Gaussian Process regression in four iterations.\relax }}{40}}
+\newlabel{fig:GP_it4_doubleexplore}{{\M@TitleReference {6.5}{Gaussian Process regression in four iterations.\relax }}{40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Safe set computation in four iterations. The better disturbance estimate causes an increase in the safe states already after the first iteration.\relax }}{41}}
+\newlabel{fig:SafeSet_it4_unexplore}{{\M@TitleReference {6.6}{Safe set computation in four iterations. The better disturbance estimate causes an increase in the safe states already after the first iteration.\relax }}{41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.\relax }}{42}}
+\newlabel{fig:Simulation}{{\M@TitleReference {6.7}{Choice of samples (red) by employing a grid (blue) and taking the nearest neighbours to the grid points in order to ensure that the samples cover the whole state space.\relax }}{42}}
 \bibdata{bibliography}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {chapter}{\chapternumberline {7}Conclusions}{41}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {7}Conclusions}{43}}
 \bibcite{akametalu2014reachability}{1}
 \bibcite{aastrom2013adaptive}{2}
 \bibcite{azar2011speedy}{3}
@@ -121,10 +131,12 @@
 \bibcite{Rasmussen:2010:GPM:1756006.1953029}{11}
 \bibcite{strehl2006pac}{12}
 \bibcite{sutton1998reinforcement}{13}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{43}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{45}}
 \bibcite{tsitsiklis1997analysis}{14}
 \bibcite{wang1993stable}{15}
 \bibcite{watkins1992q}{16}
 \bibstyle{abbrv}
-\memsetcounter{lastsheet}{44}
-\memsetcounter{lastpage}{44}
+\expandafter\gdef\csname eqp@this@COMMENT\endcsname{266.52696pt}
+\expandafter\gdef\csname eqp@next@COMMENT\endcsname{0pt}
+\memsetcounter{lastsheet}{46}
+\memsetcounter{lastpage}{46}

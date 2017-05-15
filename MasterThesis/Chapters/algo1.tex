@@ -86,6 +86,7 @@
 \newcommand{\argmin}{\arg\!\min}
 \newcommand{\argmax}{\arg\!\max}
 
+\renewcommand{\algorithmiccomment}[1]{\hfill\eqparbox{COMMENT}{// #1}}
 
 \begin{algorithm}[h!]
 \small
@@ -94,15 +95,15 @@
 \begin{algorithmic}
    \REQUIRE $\Scal, \Acal,\gamma$, and $R_{\max}$, $m_0$, $\varepsilon_{\mathrm{target}}$. 
    \FORALL{$(s,a)$}
-    \STATE $Q(s, a) \leftarrow R_{\max}/(1-\gamma)$ \qquad\qquad\qquad {\color{blue}  {\texttt{// optimistic initialization of $Q$-values}}} 
-    \STATE $U(s,a) \leftarrow 0$   \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// per-batch cumulative $Q$-values for $(s,a)$}}} 
-    \STATE $B(s, a) \leftarrow 0$   \qquad\qquad {\color{blue}  {\texttt{// beginning time-step of attempted update for $(s,a)$}}} 
-    \STATE $C(s,a) \leftarrow 0$             \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// per-batch counter for $(s,a)$}}} 
-    \STATE $M(s, a) \leftarrow m_0$          \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// batch size for $(s,a)$}}}  
-    \STATE $L(s,a)\leftarrow \textsf{TRUE} $  \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// the learning flag}}} 
+    \STATE $Q(s, a) \leftarrow R_{\max}/(1-\gamma)$ {\color{blue}  \COMMENT{\texttt{optimistic initialization of $Q$-values}}} 
+    \STATE $U(s,a) \leftarrow 0$    {\color{blue} \COMMENT{\texttt{per-batch cumulative $Q$-values for $(s,a)$}}}
+    \STATE $B(s, a) \leftarrow 0$   {\color{blue}  \COMMENT{\texttt{beginning time-step of attempted update for $(s,a)$}}}
+    \STATE $C(s,a) \leftarrow 0$    {\color{blue}  \COMMENT{\texttt{per-batch counter for $(s,a)$}}} 
+    \STATE $M(s, a) \leftarrow m_0$          {\color{blue}  \COMMENT{\texttt{batch size for $(s,a)$}}}  
+    \STATE $L(s,a)\leftarrow \textsf{TRUE} $   {\color{blue} \COMMENT{\texttt{the learning flag}}} 
    \ENDFOR
-   \STATE $t_{\textrm{update}} \leftarrow 0$  \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// time-step of the most recent $Q$-value change}}}
-   \STATE $\varepsilon \leftarrow 10^{-4}$     \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// threshold for admitting $Q$-value updates}}}
+   \STATE $t_{\textrm{update}} \leftarrow 0$  {\color{blue}  \COMMENT{\texttt{time-step of the most recent $Q$-value change}}}
+   \STATE $\varepsilon \leftarrow 10^{-4}$    {\color{blue}  \COMMENT{\texttt{threshold for admitting $Q$-value updates}}}
    
    \FOR{$t\geq 1$}   %\qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// main loop}}}
     \STATE Observe the current state $s_t$. Take action $a_t \in \argmax_{a\in \Acal} Q(s_t, a)$, receive reward $r_t$, and go to a next state $s_{t+1}$.    \alsp
@@ -119,15 +120,15 @@
         \IF{$C(s_t,a_t)=M(s_t,a_t)$} \alsp
             \STATE $q \leftarrow U(s_t, a_t)/M(s_t,a_t)$ \alsp
             \IF{$|Q(s_t,a_t)-q|\ge \varepsilon$} \alsp
-                \STATE $Q(s_t,a_t) \leftarrow q$ \alsp  \qquad\qquad {\color{blue}  {\texttt{// update if $Q$-value changes significantly }}}
+                \STATE $Q(s_t,a_t) \leftarrow q$ \alsp  {\color{blue}  \COMMENT{\texttt{update if $Q$-value changes significantly }}}
                 \STATE $t_{\textrm{update}} \leftarrow t$ \alsp
             \ELSIF{$B(s_t,a_t)>t_{\textrm{update}}$} \alsp
                 \STATE $L(s_t,a_t) \leftarrow \textsf{FALSE}$ \alsp
             \ENDIF
             \STATE $U(s_t,a_t) \leftarrow 0$ \alsp
             \STATE $C(s_t, a_t) \leftarrow 0$ \alsp
-            \STATE $M(s_t, a_t) \leftarrow \min\{\lceil 1.02M(s_t,a_t)\rceil +1, 500\}$ \alsp  \qquad\qquad {\color{blue}  {\texttt{// increase batch size}}}
-            \STATE $\varepsilon \leftarrow \min \{1.1\varepsilon, \varepsilon_{\mathrm{target}}\}$ \alsp  \qquad\qquad\qquad\qquad {\color{blue}  {\texttt{// increase the threshold}}}
+            \STATE $M(s_t, a_t) \leftarrow \min\{\lceil 1.02M(s_t,a_t)\rceil +1, 500\}$  {\color{blue} \alsp //{\texttt{increase batch size}}}
+            \STATE $\varepsilon \leftarrow \min \{1.1\varepsilon, \varepsilon_{\mathrm{target}}\}$   {\color{blue}  \COMMENT{\texttt{increase the threshold}}}
         \ENDIF
     \ENDIF
    \ENDFOR             
