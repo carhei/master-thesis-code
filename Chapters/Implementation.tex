@@ -1,7 +1,7 @@
 \documentclass[../main.tex]{subfiles}
-2
+
 \begin{document}
-In this chapter, the implementation details of the approach outlined in Section \ref{sec:SolutionArchitecture} will be discussed. Starting from the modelling of the system as a Markov Decision Process, the implementation of the Reinforcement Learning algorithm, the disturbance estimation with Gaussian Processes, and finally the safe set calculation with HJI reachability analysis will be described.
+In this chapter, the implementation details of the approach outlined in Section \ref{sec:SolutionArchitecture} will be discussed. Starting from the modelling of the system as a Markov Decision Process, the implementation of the reinforcement learning algorithm, the disturbance estimation with Gaussian Processes, and finally the safe set calculation with HJI reachability analysis will be described.
 \section{Markov Decision Process Model}\label{sec:implementation_MDP}
 Consider a damped inverted pendulum system with mass $m$, length $l$ and friction coefficient $b$. The states of the system are the pendulum angle $x_1$ and angular velocity $x_2$. The system is disturbed by an additive state-dependent disturbance $d(x)$. The dynamics are described by \cite{doya2000reinforcement}:
 \begin{align}
@@ -9,14 +9,14 @@ Consider a damped inverted pendulum system with mass $m$, length $l$ and frictio
     \dot{x_2} &= \frac{1}{ml^2}u+\frac{g}{l}\sin(x_1)-\frac{b}{m}x_2+d(x).
 \end{align}
 All constants are assumed to be positive. 
-Modelling the inverted pendulum system as a MDP means to define the quintuple $(S,A,T,r,\gamma)$ as given in Section \ref{sec:RL}. Defining the finite set of states $S$ and the finite set of actions $A$ implies discretisation over the intervals $[x_{\min}, x_{\max}]$ and $[u_{\min}, u_{\max}]$, where $x_1$ is a circular state and should be wrapped if the discretisation interval is larger than its period $2\pi$. The number of discretisation  steps impacts the convergence speed of the Reinforcement Learning algorithm and was chosen around $n = 20$ for each state dimension.
+Modelling the inverted pendulum system as a MDP means to define the quintuple $(S,A,T,r,\gamma)$ as given in Section \ref{sec:RL}. Defining the finite set of states $S$ and the finite set of actions $A$ implies discretisation over the intervals $[x_{\min}, x_{\max}]$ and $[u_{\min}, u_{\max}]$, where $x_1$ is a circular state and should be wrapped if the discretisation interval is larger than its period $2\pi$. The number of discretisation  steps impacts the convergence speed of the reinforcement learning algorithm and was chosen around $n = 20$ for each state dimension.
 The transition probabilities $T$ have been approximated by simply sampling the discrete transitions under a chosen time step $h$. Given a specific action and state, the subsequent state has been simulated $100$ times. The probability $p(s'|s,a)$ of state $s'$ is then computed as the number of transitions to $s'$ from the chosen state and action divided by the number of total transitions. It is hereby important that the time step $h$ is large enough to actually allow transitions. If $h$ is too small, the system will always stay in state $s$ regardless of the chosen action. For the system the time step should lie around $h = 0.2\,\text{s}$. The reward function for state $s$, $r(s)$, is defined as
 \begin{equation}
     r(s) = e^{-\frac{\|s\|^2}{\sigma^2}},
 \end{equation}
 where $\sigma$ is a constant defining how narrow the function is. Defining the coordinate system with $x_1 = 0$ being on the top, this reward corresponds to the goal of keeping the pendulum still and upright as the states with the smallest $x$ are rewarded the most. The discount factor $\gamma$ is chosen to be $0.9$. This choice weighs future rewards slightly less than present rewards. One reason for not weighing all rewards the same is that the convergence time increases if the discount factor is chosen larger. Furthermore, the pendulum is being reset as soon as the state values are outside some margin around the border of the MDP. Therefore, a reward far in the future might never be obtained as the pendulum might be reset earlier and should be weighed less.
 \section{Reinforcement Learning}
-As the rewards and transition probabilities are not known to the learning agent. we apply Reinforcement Learning to learn the optimal policy. 
+As the rewards and transition probabilities are not known to the learning agent, we apply reinforcement learning to learn the optimal policy. 
 \input{Chapters/algo1.tex}
 The chosen algorithm resembles largely the Delayed Q-Learning algorithm introduced in Section \ref{sec:RL} with the update rule \eqref{DelayedQ}. The only difference lies in the handling of the algorithm inputs $\varepsilon$ and $m$. The batch size $m$ determines how often the update of a state-action pair's Q-value is attempted until a successful update of any Q-value has to occur for the update to be attempted again. This batch size has been replaced by the state-action-dependent batch size $M(s,a)$ that is increased each time when the update of the state-action pair $(s,a)$ has been tried $M(s,a)$ times. The update rule is 
 \begin{align}
