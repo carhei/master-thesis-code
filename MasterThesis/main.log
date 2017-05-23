@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  15 MAY 2017 14:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  23 MAY 2017 18:33
 entering extended mode
 **main.tex
 (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.tex
@@ -803,18 +803,18 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )))
 (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -841,19 +841,19 @@ Package epstopdf Info: Source file: <kth_svv.eps>
 (epstopdf)                    size: 71224 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_svv-eps-converted-to.pd
 f kth_svv.eps>
-(epstopdf)             \includegraphics on input line 31.
+(epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
  <kth_svv-eps-converted-to.pdf, id=1, 286.06876pt x 286.06876pt>
 File: kth_svv-eps-converted-to.pdf Graphic file (type pdf)
 
 <use kth_svv-eps-converted-to.pdf>
-Package pdftex.def Info: kth_svv-eps-converted-to.pdf used on input line 31.
+Package pdftex.def Info: kth_svv-eps-converted-to.pdf used on input line 32.
 (pdftex.def)             Requested size: 286.06805pt x 286.06805pt.
 
 ! Undefined control sequence.
 <argument> \thetrita 
                      
-l.31 \maketitle
+l.32 \maketitle
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -867,24 +867,38 @@ and I'll forget about whatever was undefined.
 o/MasterThesis/MasterThesis/kth_svv-eps-converted-to.pdf>] [2
 
 ]
-(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/Introduction.tex
-) [3
+(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
-] [4
-
-]
-(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/TheoreticalBackg
-round.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5] [6]
-[7] [8] [9]
+)) [3] [4
+
+]
+(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/Introduction.tex
+[1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+) [3] [4
+
+]
+(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/TheoreticalBackg
+round.tex [5] [6] [7] [8] [9]
 Package epstopdf Info: Source file: <Images/GaussianProcess_example_prior.eps>
 (epstopdf)                    date: 2017-05-09 16:59:21
 (epstopdf)                    size: 40522 bytes
@@ -894,16 +908,16 @@ onverted-to.pdf>
 (epstopdf)                    size: 14077 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/GaussianProcess_exam
 ple_prior-eps-converted-to.pdf Images/GaussianProcess_example_prior.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/GaussianProcess_example_prior-eps-converted-to.pdf, id=50, 421.575pt x 
+<Images/GaussianProcess_example_prior-eps-converted-to.pdf, id=62, 421.575pt x 
 316.18124pt>
 File: Images/GaussianProcess_example_prior-eps-converted-to.pdf Graphic file (t
 ype pdf)
  <use Images/GaussianProcess_example_prior-eps-converted-to.pdf>
 Package pdftex.def Info: Images/GaussianProcess_example_prior-eps-converted-to.
-pdf used on input line 119.
+pdf used on input line 127.
 (pdftex.def)             Requested size: 396.0pt x 297.00777pt.
 Package epstopdf Info: Source file: <Images/GaussianProcess_example.eps>
 (epstopdf)                    date: 2017-05-09 16:59:21
@@ -914,56 +928,54 @@ ed-to.pdf>
 (epstopdf)                    size: 32854 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/GaussianProcess_exam
 ple-eps-converted-to.pdf Images/GaussianProcess_example.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/GaussianProcess_example-eps-converted-to.pdf, id=51, 421.575pt x 316.18
+<Images/GaussianProcess_example-eps-converted-to.pdf, id=63, 421.575pt x 316.18
 124pt>
 File: Images/GaussianProcess_example-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Images/GaussianProcess_example-eps-converted-to.pdf>
 Package pdftex.def Info: Images/GaussianProcess_example-eps-converted-to.pdf us
-ed on input line 123.
+ed on input line 131.
 (pdftex.def)             Requested size: 396.0pt x 297.00777pt.
 
 
-LaTeX Warning: Float too large for page by 63.61528pt on input line 127.
+LaTeX Warning: Float too large for page by 57.21527pt on input line 135.
 
 [10] [11 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/GaussianP
 rocess_example_prior-eps-converted-to.pdf> <C:/Users/Erik/Desktop/Caro/MasterTh
 esis/MasterThesis/Images/GaussianProcess_example-eps-converted-to.pdf>]
-Overfull \hbox (6.06323pt too wide) in paragraph at lines 149--151
+Overfull \hbox (6.06323pt too wide) in paragraph at lines 157--159
 \OT1/cmr/m/n/10.95 Given this ex-pres-sion, the ker-nel pa-ram-e-ters can be es
 -ti-mated with stan-dard gradient-
  []
 
-[12] <Images/ReachableSet.png, id=69, 871.255pt x 597.23125pt>
+[12] <Images/ReachableSet.png, id=82, 871.255pt x 597.23125pt>
 File: Images/ReachableSet.png Graphic file (type png)
 
 <use Images/ReachableSet.png>
-Package pdftex.def Info: Images/ReachableSet.png used on input line 162.
+Package pdftex.def Info: Images/ReachableSet.png used on input line 170.
 (pdftex.def)             Requested size: 396.0pt x 271.44902pt.
 
-Overfull \hbox (54.3151pt too wide) in paragraph at lines 169--171
-\OT1/cmr/m/n/10.95 We can then cal-cu-late the back-wards reach-able set as the
- vis-cos-ity so-lu-tion []
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13]) [14 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/Reachabl
-eSet.png>]
+ [13 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/ReachableSet.
+png>])
+[14]
 (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/RelatedWork.tex
 [15
 
 ]) [16]
 (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/SolutionArchitec
-ture.tex <Images/flow_simple.pdf, id=84, 584.1825pt x 403.5075pt>
+ture.tex <Images/flow_simple.pdf, id=98, 584.1825pt x 403.5075pt>
 File: Images/flow_simple.pdf Graphic file (type pdf)
 
 <use Images/flow_simple.pdf>
 Package pdftex.def Info: Images/flow_simple.pdf used on input line 9.
 (pdftex.def)             Requested size: 396.0pt x 273.5318pt.
 
-<Images/flow_complete.pdf, id=85, 637.38126pt x 403.5075pt>
+<Images/flow_complete.pdf, id=99, 637.38126pt x 403.5075pt>
 File: Images/flow_complete.pdf Graphic file (type pdf)
 
 <use Images/flow_complete.pdf>
@@ -1014,7 +1026,7 @@ afe-eps-converted-to.pdf Images/PolicyComparison_unsafe.eps>
 (epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/PolicyComparison_unsafe-eps-converted-to.pdf, id=119, 437.635pt x 315.1
+<Images/PolicyComparison_unsafe-eps-converted-to.pdf, id=132, 437.635pt x 315.1
 775pt>
 File: Images/PolicyComparison_unsafe-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1035,7 +1047,7 @@ Violations-eps-converted-to.pdf Images/Histogram_ConstraintViolations.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/Histogram_ConstraintViolations-eps-converted-to.pdf, id=120, 437.635pt 
+<Images/Histogram_ConstraintViolations-eps-converted-to.pdf, id=133, 437.635pt 
 x 315.1775pt>
 File: Images/Histogram_ConstraintViolations-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -1061,15 +1073,15 @@ f>
 (epstopdf)                    size: 5090 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/safeSet_example-eps-
 converted-to.pdf Images/safeSet_example.eps>
-(epstopdf)             \includegraphics on input line 132.
+(epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/safeSet_example-eps-converted-to.pdf, id=141, 330.23375pt x 340.27126pt
+<Images/safeSet_example-eps-converted-to.pdf, id=153, 330.23375pt x 340.27126pt
 >
 File: Images/safeSet_example-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/safeSet_example-eps-converted-to.pdf>
 Package pdftex.def Info: Images/safeSet_example-eps-converted-to.pdf used on in
-put line 132.
+put line 141.
 (pdftex.def)             Requested size: 396.0pt x 408.05347pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1084,47 +1096,52 @@ Package epstopdf Info: Source file: <Images/safeSet_simulation.eps>
 (epstopdf)                    size: 35819 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/safeSet_simulation-e
 ps-converted-to.pdf Images/safeSet_simulation.eps>
-(epstopdf)             \includegraphics on input line 140.
+(epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/safeSet_simulation-eps-converted-to.pdf, id=145, 717.68124pt x 454.6987
+<Images/safeSet_simulation-eps-converted-to.pdf, id=158, 717.68124pt x 454.6987
 5pt>
 File: Images/safeSet_simulation-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/safeSet_simulation-eps-converted-to.pdf>
 Package pdftex.def Info: Images/safeSet_simulation-eps-converted-to.pdf used on
- input line 140.
+ input line 149.
 (pdftex.def)             Requested size: 396.0pt x 250.89684pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/safeSet_examp
-le-eps-converted-to.pdf>] [29 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterTh
-esis/Images/safeSet_simulation-eps-converted-to.pdf>]
-<Images/doubleloop_fail.pdf, id=160, 395.4775pt x 470.75874pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/safeSet_exampl
+e-eps-converted-to.pdf>]
+<Images/doubleloop_fail.pdf, id=166, 395.4775pt x 470.75874pt>
 File: Images/doubleloop_fail.pdf Graphic file (type pdf)
 
 <use Images/doubleloop_fail.pdf>
-Package pdftex.def Info: Images/doubleloop_fail.pdf used on input line 149.
+Package pdftex.def Info: Images/doubleloop_fail.pdf used on input line 158.
 (pdftex.def)             Requested size: 178.19879pt x 212.11961pt.
 
-<Images/doubleloop.pdf, id=161, 465.74pt x 534.99875pt>
+<Images/doubleloop.pdf, id=167, 465.74pt x 534.99875pt>
 File: Images/doubleloop.pdf Graphic file (type pdf)
 
 <use Images/doubleloop.pdf>
-Package pdftex.def Info: Images/doubleloop.pdf used on input line 153.
+Package pdftex.def Info: Images/doubleloop.pdf used on input line 162.
 (pdftex.def)             Requested size: 217.80121pt x 250.18411pt.
 
-Overfull \hbox (4.86667pt too wide) in paragraph at lines 148--155
+Overfull \hbox (4.86667pt too wide) in paragraph at lines 157--164
  [][]  [] 
  []
 
-[30 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/doubleloop_fai
-l.pdf> <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/doubleloop.
-pdf>] <Images/pointchoice.pdf, id=171, 488.82625pt x 368.37625pt>
+
+Underfull \vbox (badness 3128) has occurred while \output is active []
+
+ [29 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/safeSet_simul
+ation-eps-converted-to.pdf>] [30 <C:/Users/Erik/Desktop/Caro/MasterThesis/Maste
+rThesis/Images/doubleloop_fail.pdf> <C:/Users/Erik/Desktop/Caro/MasterThesis/Ma
+sterThesis/Images/doubleloop.pdf>]
+<Images/pointchoice.pdf, id=184, 488.82625pt x 368.37625pt>
 File: Images/pointchoice.pdf Graphic file (type pdf)
 
 <use Images/pointchoice.pdf>
-Package pdftex.def Info: Images/pointchoice.pdf used on input line 179.
+Package pdftex.def Info: Images/pointchoice.pdf used on input line 188.
 (pdftex.def)             Requested size: 316.80121pt x 238.74472pt.
 Package epstopdf Info: Source file: <Images/GP_posterior2.eps>
 (epstopdf)                    date: 2017-05-11 15:57:24
@@ -1135,15 +1152,15 @@ Package epstopdf Info: Source file: <Images/GP_posterior2.eps>
 (epstopdf)                    size: 52677 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/GP_posterior2-eps-co
 nverted-to.pdf Images/GP_posterior2.eps>
-(epstopdf)             \includegraphics on input line 189.
+(epstopdf)             \includegraphics on input line 198.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/GP_posterior2-eps-converted-to.pdf, id=172, 520.94624pt x 333.245pt>
+<Images/GP_posterior2-eps-converted-to.pdf, id=185, 520.94624pt x 333.245pt>
 File: Images/GP_posterior2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/GP_posterior2-eps-converted-to.pdf>
 Package pdftex.def Info: Images/GP_posterior2-eps-converted-to.pdf used on inpu
-t line 189.
+t line 198.
 (pdftex.def)             Requested size: 396.0pt x 253.31967pt.
 Package epstopdf Info: Source file: <Images/GP_posterior_zoom.eps>
 (epstopdf)                    date: 2017-05-11 15:57:14
@@ -1154,21 +1171,29 @@ pdf>
 (epstopdf)                    size: 45400 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/GP_posterior_zoom-ep
 s-converted-to.pdf Images/GP_posterior_zoom.eps>
-(epstopdf)             \includegraphics on input line 193.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/GP_posterior_zoom-eps-converted-to.pdf, id=173, 520.94624pt x 333.245pt
+<Images/GP_posterior_zoom-eps-converted-to.pdf, id=186, 520.94624pt x 333.245pt
 >
 File: Images/GP_posterior_zoom-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/GP_posterior_zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Images/GP_posterior_zoom-eps-converted-to.pdf used on 
-input line 193.
+input line 202.
 (pdftex.def)             Requested size: 396.0pt x 253.31967pt.
  [31] [32 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/pointcho
 ice.pdf>] [33 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/GP_p
 osterior2-eps-converted-to.pdf> <C:/Users/Erik/Desktop/Caro/MasterThesis/Master
 Thesis/Images/GP_posterior_zoom-eps-converted-to.pdf>]) [34]
 (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/Results.tex
+[35
+
+]
+Overfull \hbox (19.65941pt too wide) in paragraph at lines 65--78
+ [][] 
+ []
+
+[36]
 Package epstopdf Info: Source file: <Images/samples_exploration.eps>
 (epstopdf)                    date: 2017-05-09 16:59:21
 (epstopdf)                    size: 243068 bytes
@@ -1178,16 +1203,16 @@ o.pdf>
 (epstopdf)                    size: 64546 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/samples_exploration-
 eps-converted-to.pdf Images/samples_exploration.eps>
-(epstopdf)             \includegraphics on input line 13.
+(epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/samples_exploration-eps-converted-to.pdf, id=202, 477.785pt x 299.1175p
+<Images/samples_exploration-eps-converted-to.pdf, id=221, 477.785pt x 299.1175p
 t>
 File: Images/samples_exploration-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/samples_exploration-eps-converted-to.pdf>
 Package pdftex.def Info: Images/samples_exploration-eps-converted-to.pdf used o
-n input line 13.
-(pdftex.def)             Requested size: 396.0pt x 247.91602pt.
+n input line 88.
+(pdftex.def)             Requested size: 316.80121pt x 198.33098pt.
 Package epstopdf Info: Source file: <Images/samples_unexploration.eps>
 (epstopdf)                    date: 2017-05-09 16:59:21
 (epstopdf)                    size: 267739 bytes
@@ -1197,26 +1222,20 @@ Package epstopdf Info: Source file: <Images/samples_unexploration.eps>
 (epstopdf)                    size: 66507 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/samples_unexploratio
 n-eps-converted-to.pdf Images/samples_unexploration.eps>
-(epstopdf)             \includegraphics on input line 17.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/samples_unexploration-eps-converted-to.pdf, id=203, 477.785pt x 299.117
+<Images/samples_unexploration-eps-converted-to.pdf, id=222, 477.785pt x 299.117
 5pt>
 File: Images/samples_unexploration-eps-converted-to.pdf Graphic file (type pdf)
 
  <use Images/samples_unexploration-eps-converted-to.pdf>
 Package pdftex.def Info: Images/samples_unexploration-eps-converted-to.pdf used
- on input line 17.
-(pdftex.def)             Requested size: 396.0pt x 247.91602pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35
-
-]
-[36 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/samples_explor
-ation-eps-converted-to.pdf> <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThes
-is/Images/samples_unexploration-eps-converted-to.pdf>]
+ on input line 92.
+(pdftex.def)             Requested size: 316.80121pt x 198.33098pt.
+ [37 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/samples_explo
+ration-eps-converted-to.pdf> <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThe
+sis/Images/samples_unexploration-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/policy_exploration.eps>
 (epstopdf)                    date: 2017-05-12 11:21:22
 (epstopdf)                    size: 59790 bytes
@@ -1226,15 +1245,15 @@ Package epstopdf Info: Source file: <Images/policy_exploration.eps>
 (epstopdf)                    size: 24758 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/policy_exploration-e
 ps-converted-to.pdf Images/policy_exploration.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/policy_exploration-eps-converted-to.pdf, id=218, 614.295pt x 238.8925pt
+<Images/policy_exploration-eps-converted-to.pdf, id=234, 614.295pt x 238.8925pt
 >
 File: Images/policy_exploration-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/policy_exploration-eps-converted-to.pdf>
 Package pdftex.def Info: Images/policy_exploration-eps-converted-to.pdf used on
- input line 28.
+ input line 101.
 (pdftex.def)             Requested size: 475.19879pt x 184.80075pt.
 Package epstopdf Info: Source file: <Images/PolicyError.eps>
 (epstopdf)                    date: 2017-05-12 11:15:33
@@ -1244,20 +1263,21 @@ Package epstopdf Info: Source file: <Images/PolicyError.eps>
 (epstopdf)                    size: 18452 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/PolicyError-eps-conv
 erted-to.pdf Images/PolicyError.eps>
-(epstopdf)             \includegraphics on input line 36.
+(epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/PolicyError-eps-converted-to.pdf, id=219, 399.4925pt x 271.0125pt>
+<Images/PolicyError-eps-converted-to.pdf, id=235, 399.4925pt x 271.0125pt>
 File: Images/PolicyError-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/PolicyError-eps-converted-to.pdf>
 Package pdftex.def Info: Images/PolicyError-eps-converted-to.pdf used on input 
-line 36.
+line 109.
 (pdftex.def)             Requested size: 396.0pt x 268.6547pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [38 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/policy_explor
+ation-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/leastvisited.eps>
 (epstopdf)                    date: 2017-05-12 18:02:28
 (epstopdf)                    size: 368060 bytes
@@ -1266,28 +1286,22 @@ Package epstopdf Info: Source file: <Images/leastvisited.eps>
 (epstopdf)                    size: 8991 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/leastvisited-eps-con
 verted-to.pdf Images/leastvisited.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<Images/leastvisited-eps-converted-to.pdf, id=220, 614.295pt x 392.46625pt>
+
+<Images/leastvisited-eps-converted-to.pdf, id=243, 614.295pt x 392.46625pt>
 File: Images/leastvisited-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/leastvisited-eps-converted-to.pdf>
 Package pdftex.def Info: Images/leastvisited-eps-converted-to.pdf used on input
- line 43.
+ line 116.
 (pdftex.def)             Requested size: 396.0pt x 253.00403pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 2020) has occurred while \output is active []
-
- [37 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/policy_explor
-ation-eps-converted-to.pdf>]
-Underfull \vbox (badness 8132) has occurred while \output is active []
-
- [38 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/PolicyError-e
-ps-converted-to.pdf>]
+ [39 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/PolicyError-e
+ps-converted-to.pdf>] [40 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis
+/Images/leastvisited-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/GP_it4_doubleexplore.eps>
 (epstopdf)                    date: 2017-05-15 11:23:32
 (epstopdf)                    size: 337595 bytes
@@ -1297,21 +1311,20 @@ to.pdf>
 (epstopdf)                    size: 148053 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/GP_it4_doubleexplore
 -eps-converted-to.pdf Images/GP_it4_doubleexplore.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/GP_it4_doubleexplore-eps-converted-to.pdf, id=236, 668.4975pt x 625.336
+<Images/GP_it4_doubleexplore-eps-converted-to.pdf, id=259, 668.4975pt x 625.336
 24pt>
 File: Images/GP_it4_doubleexplore-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/GP_it4_doubleexplore-eps-converted-to.pdf>
 Package pdftex.def Info: Images/GP_it4_doubleexplore-eps-converted-to.pdf used 
-on input line 52.
+on input line 125.
 (pdftex.def)             Requested size: 475.19879pt x 444.53572pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/leastvisited-
-eps-converted-to.pdf>]
+ [41]
 Package epstopdf Info: Source file: <Images/SafeSet_it4_unexplore.eps>
 (epstopdf)                    date: 2017-05-09 16:59:21
 (epstopdf)                    size: 47921 bytes
@@ -1321,25 +1334,21 @@ Package epstopdf Info: Source file: <Images/SafeSet_it4_unexplore.eps>
 (epstopdf)                    size: 5897 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/SafeSet_it4_unexplor
 e-eps-converted-to.pdf Images/SafeSet_it4_unexplore.eps>
-(epstopdf)             \includegraphics on input line 60.
+(epstopdf)             \includegraphics on input line 133.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/SafeSet_it4_unexplore-eps-converted-to.pdf, id=244, 589.20125pt x 315.1
+<Images/SafeSet_it4_unexplore-eps-converted-to.pdf, id=263, 589.20125pt x 315.1
 775pt>
 File: Images/SafeSet_it4_unexplore-eps-converted-to.pdf Graphic file (type pdf)
 
  <use Images/SafeSet_it4_unexplore-eps-converted-to.pdf>
 Package pdftex.def Info: Images/SafeSet_it4_unexplore-eps-converted-to.pdf used
- on input line 60.
+ on input line 133.
 (pdftex.def)             Requested size: 396.0pt x 211.8315pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/GP_it4_double
+ [42 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/GP_it4_double
 explore-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/Simulation.eps>
 (epstopdf)                    date: 2017-05-15 13:57:22
@@ -1349,72 +1358,98 @@ Package epstopdf Info: Source file: <Images/Simulation.eps>
 (epstopdf)                    size: 73637 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/Simulation-eps-conve
 rted-to.pdf Images/Simulation.eps>
-(epstopdf)             \includegraphics on input line 68.
+(epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/Simulation-eps-converted-to.pdf, id=254, 668.4975pt x 338.26375pt>
+<Images/Simulation-eps-converted-to.pdf, id=273, 668.4975pt x 338.26375pt>
 File: Images/Simulation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/Simulation-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Simulation-eps-converted-to.pdf used on input l
-ine 68.
+ine 143.
 (pdftex.def)             Requested size: 396.0pt x 200.38422pt.
-) [41 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/SafeSet_it4_
-unexplore-eps-converted-to.pdf>]
-[42 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/Simulation-eps
--converted-to.pdf>]
+Package epstopdf Info: Source file: <Images/Simulation_time.eps>
+(epstopdf)                    date: 2017-05-23 18:29:47
+(epstopdf)                    size: 338477 bytes
+(epstopdf)             Output file: <Images/Simulation_time-eps-converted-to.pd
+f>
+(epstopdf)             Command: <epstopdf --outfile=Images/Simulation_time-eps-
+converted-to.pdf Images/Simulation_time.eps>
+(epstopdf)             \includegraphics on input line 149.
+runsystem(epstopdf --outfile=Images/Simulation_time-eps-converted-to.pdf Images
+/Simulation_time.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <Images/Simulation_time-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2017-05-23 18:33:29
+(epstopdf)                    size: 111021 bytes.
+
+<Images/Simulation_time-eps-converted-to.pdf, id=274, 668.4975pt x 338.26375pt>
+File: Images/Simulation_time-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Simulation_time-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Simulation_time-eps-converted-to.pdf used on in
+put line 149.
+(pdftex.def)             Requested size: 396.0pt x 200.38422pt.
+) [43 <C:/Users/Erik/Desktop/Caro/MasterThesis/MasterThesis/Images/SafeSet_it4_
+unexplore-eps-converted-to.pdf>] [44 <C:/Users/Erik/Desktop/Caro/MasterThesis/M
+asterThesis/Images/Simulation-eps-converted-to.pdf> <C:/Users/Erik/Desktop/Caro
+/MasterThesis/MasterThesis/Images/Simulation_time-eps-converted-to.pdf>]
 (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\Chapters/Conclusions.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
+[45
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
-)
-(C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.bbl [43
+]
+Overfull \hbox (4.72801pt too wide) in paragraph at lines 16--16
+\OT1/cmr/bx/n/10.95 Re-cur-sive Dis-tur-bance Es-ti-ma-tion.[] \OT1/cmr/m/n/10.
+95 Sec-ondly, the dis-tur-bance es-ti-ma-tion could
+ []
 
-] [44
+[46]) (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.bbl [47]
+[48
 
 ]
 bibitemlist
-[45]) [46] (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.aux) ) 
+[49]) [50]
+\tf@toc=\write4
+ (C:\Users\Erik\Desktop\Caro\MasterThesis\MasterThesis\main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8009 strings out of 493705
- 118221 string characters out of 3142156
- 219090 words of memory out of 3000000
- 11148 multiletter control sequences out of 15000+200000
+ 8030 strings out of 493705
+ 118744 string characters out of 3142156
+ 220362 words of memory out of 3000000
+ 11165 multiletter control sequences out of 15000+200000
  19984 words of font info for 73 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 46i,16n,40p,2066b,1071s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb>
-Output written on main.pdf (46 pages, 1527991 bytes).
+ 46i,16n,40p,3165b,1071s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (54 pages, 1659567 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
+ 391 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,29 @@
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}
+\contentsline {section}{\numberline {1.2}General Idea}{1}
+\contentsline {section}{\numberline {1.3}Outline}{3}
+\contentsline {chapter}{\chapternumberline {2}Theoretical Background}{5}
+\contentsline {section}{\numberline {2.1}The Reinforcement Learning Problem}{5}
+\contentsline {subsection}{Reinforcement learning algorithms}{7}
+\contentsline {section}{\numberline {2.2}Gaussian Processes for Regression}{9}
+\contentsline {section}{\numberline {2.3}Safe Set Computations based on Reachability Analysis}{12}
+\contentsline {chapter}{\chapternumberline {3}Related Work}{15}
+\contentsline {chapter}{\chapternumberline {4}Solution Architecture}{17}
+\contentsline {chapter}{\chapternumberline {5}Implementation}{21}
+\contentsline {section}{\numberline {5.1}Markov Decision Process Model}{21}
+\contentsline {section}{\numberline {5.2}Reinforcement Learning}{22}
+\contentsline {section}{\numberline {5.3}Safe Set Computations based on Reachability Analysis}{25}
+\contentsline {section}{\numberline {5.4}Disturbance Estimation with Gaussian processes}{30}
+\contentsline {section}{\numberline {5.5}Exploration}{32}
+\contentsline {chapter}{\chapternumberline {6}Experimental Results}{35}
+\contentsline {section}{\numberline {6.1}Experimental Setup}{35}
+\contentsline {section}{\numberline {6.2}Policy Learning}{36}
+\contentsline {section}{\numberline {6.3}Disturbance Estimation and Safe Set Computations}{40}
+\contentsline {section}{\numberline {6.4}Simulations}{43}
+\contentsline {chapter}{\chapternumberline {7}Conclusions and Future Work}{45}
+\contentsline {section}{\numberline {7.1}Conclusions}{45}
+\contentsline {section}{\numberline {7.2}Future Work}{46}
+\contentsline {paragraph}{Integration of Learning and Safety Loop.}{46}
+\contentsline {paragraph}{Recursive Disturbance Estimation.}{46}
+\contentsline {paragraph}{Guarantee to always stay in the Safe Set.}{46}
+\contentsline {chapter}{Bibliography}{49}

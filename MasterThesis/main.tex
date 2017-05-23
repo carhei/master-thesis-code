@@ -7,21 +7,22 @@
 \usepackage{epstopdf}
 \usepackage{subcaption}
 \usepackage{subfiles}
-
+\usepackage{array}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{color}  
 \usepackage{eqparbox}
 \usepackage{float}
-
+\captionsetup{font=small}
 \graphicspath{{Images/}{../Images/}}
 \DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
+\newcolumntype{M}[1]{>{\arraybackslash}m{#1}}
 
 
 \title{Safe Learning for Control}
 \author{Caroline Heidenreich}
 \date{May 2017}
-\blurb{Master's Degree Project at the department of Automatic Control\\Supervisor: Sadegh Talebi\\Examiner: Mikael Johansson}
+\blurb{Master's Degree Project at the department of Automatic Control\\Supervisor: Mohammad Sadegh Talebi\\Examiner: Mikael Johansson}
 
 
 
@@ -30,14 +31,16 @@
 \setlength{\parskip}{0.5em}
 \maketitle
 
+\tableofcontents*
+\mainmatter
 \chapter{Introduction}\label{sec:Introduction}
 \subfile{Chapters/Introduction}
 
-\chapter{Theoretical Background}
+\chapter{Theoretical Background}\label{sec:TheoreticalBackground}
 \subfile{Chapters/TheoreticalBackground}
 
 
-\chapter{Related Work}
+\chapter{Related Work}\label{sec:RelatedWork}
 \subfile{Chapters/RelatedWork}
 
 \chapter{Solution Architecture}\label{sec:SolutionArchitecture}
@@ -46,14 +49,14 @@
 \chapter{Implementation}\label{sec:Implementation}
 \subfile{Chapters/Implementation}
 
-\chapter{Results}
+\chapter{Experimental Results}\label{sec:Results}
 \subfile{Chapters/Results}
 
-\chapter{Conclusions}
+\chapter{Conclusions and Future Work}\label{sec:Conclusions}
 \subfile{Chapters/Conclusions}
 
 
 \bibliography{bibliography}
-\bibliographystyle{abbrv}
+\bibliographystyle{ieeetr}
 
 \end{document}
