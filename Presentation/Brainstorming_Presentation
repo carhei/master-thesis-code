@@ -1,0 +1,29 @@
+# Slides
+
+##Table of Contents
+
+## Short Motivation
+* Shortcoming of model-based control
+* Shortcomings of unsafe learning control
+* --> Safe Learning Control
+* Applications in Robotics, Autonomous Vehicles...
+
+## Method on the basis of an example
+* Autonomous Vehicle
+* Complex Model --> apply RL
+* Guarantee Safety with HJI
+* Update estimate of unmodeled dynamics with GP
+* Existing methods do not explore explicitly
+* Figure to summarise
+
+## Exploration
+* Definition and Advantages
+* Incremental Q-Learning
+
+## Results
+* with and without exploration
+
+## Conclusions and Future Work
+* Nice idea
+* Hard to obtain guarantees
+* Future directions
