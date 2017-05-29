@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  25 MAY 2017 10:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  26 MAY 2017 10:18
 entering extended mode
 **KTHPresentation.tex
-
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\KTHPresentatio
-n.tex"
+(C:\Users\Erik\Desktop\Caro\Presentation\KTHPresentation.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 68 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\beamer.cls"
@@ -669,8 +667,7 @@ emedefault.sty"
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\themes\outer\beamerouterth
 emedefault.sty")))
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\beamerthemeKTH
-profile.sty"
+(C:\Users\Erik\Desktop\Caro\Presentation\beamerthemeKTHprofile.sty
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
@@ -794,8 +791,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count168
 \TX@ftn=\toks46
 )
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\beamerinnerthe
-meKTHprofile.sty"
+(C:\Users\Erik\Desktop\Caro\Presentation\beamerinnerthemeKTHprofile.sty
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\textpos\textpos.sty"
 Package: textpos 2016/06/07 v1.8
 
@@ -813,11 +809,13 @@ Grid set 16 x 16 = 22.7622pt x 17.07166pt
 \TP@tbargs=\toks47
 \TP@prevdepth=\dimen216
 TextBlockOrigin set to 0pt x 0pt
-))
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\beamercolorthe
-meKTHprofile.sty"))
+)) (C:\Users\Erik\Desktop\Caro\Presentation\beamercolorthemeKTHprofile.sty))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\themes\font\beamerfontthem
 estructurebold.sty")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\picture.sty"
+Package: picture 2009/10/11 v1.3 Dimens for picture macros (HO)
+Package picture Info: Calculation method: calc.
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel\babel.sty"
 Package: babel 2014/09/25 3.9l The Babel package
 
@@ -876,24 +874,72 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\KTHPresentatio
-n.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 52.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen218
+\captionmargin@=\dimen219
+\captionwidth=\dimen220
+\caption@tempdima=\dimen221
+\caption@indent=\dimen222
+\caption@parindent=\dimen223
+\caption@hangindent=\dimen224
+)
+\c@ContinuedFloat=\count171
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+\c@KVtest=\count172
+\sf@farskip=\skip63
+\sf@captopadj=\dimen225
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count173
+\c@subfigure@save=\count174
+\c@depth=\count175
+\c@subtable=\count176
+\c@subtable@save=\count177
+\sf@top=\skip66
+\sf@bottom=\skip67
+)
+(C:\Users\Erik\Desktop\Caro\Presentation\KTHPresentation.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 53.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 *geometry* driver: auto-detecting
@@ -932,20 +978,20 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
-\scratchdimen=\dimen218
+\scratchcounter=\count178
+\scratchdimen=\dimen226
 \scratchbox=\box60
-\nofMPsegments=\count172
-\nofMParguments=\count173
+\nofMPsegments=\count179
+\nofMParguments=\count180
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count174
-\MPscratchDim=\dimen219
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
+\MPscratchCnt=\count181
+\MPscratchDim=\dimen227
+\MPnumerator=\count182
+\makeMPintoPDFobject=\count183
 \everyMPtoPDFconversion=\toks51
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 53.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -953,59 +999,57 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count177
+\c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\KTHPresentatio
-n.out")
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\KTHPresentatio
-n.out")
+(C:\Users\Erik\Desktop\Caro\Presentation\KTHPresentation.out)
+(C:\Users\Erik\Desktop\Caro\Presentation\KTHPresentation.out)
 \@outlinefile=\write6
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 52.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 53.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 52.
+(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 52.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 52.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 52.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 52.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 52.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 52.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 52.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/ptm/bx/n on input line 52.
+(Font)                  OT1/cmss/bx/n --> T1/ptm/bx/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 52.
+(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 52.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 52.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 52.
+(Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 53.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\translator\dicts\translato
 r-basic-dictionary\translator-basic-dictionary-English.dict"
@@ -1031,10 +1075,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary\translator-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 52.
+LaTeX Info: Redefining \includegraphics on input line 53.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@err
+or {\noexpand \caption outside figure or table}\@ehd \expandafter \@gobble \els
+e \refstepcounter \@captype \expandafter \@firstofone \fi {\@dblarg {\@caption 
+\@captype }}.
 
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\KTHPresentatio
-n.nav")
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
+(C:\Users\Erik\Desktop\Caro\Presentation\KTHPresentation.nav)
 Package epstopdf Info: Source file: <KTHfooterlines_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 1836430 bytes
@@ -1043,7 +1100,7 @@ Package epstopdf Info: Source file: <KTHfooterlines_CMYK.eps>
 (epstopdf)                    size: 12325 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHfooterlines_CMYK-eps-con
 verted-to.pdf KTHfooterlines_CMYK.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
 
 <KTHfooterlines_CMYK-eps-converted-to.pdf, id=12, 2127.95pt x 329.23pt>
@@ -1051,26 +1108,26 @@ File: KTHfooterlines_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHfooterlines_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHfooterlines_CMYK-eps-converted-to.pdf used on input
- line 52.
+ line 53.
 (pdftex.def)             Requested size: 564.5039pt x 113.03186pt.
 
-Overfull \hbox (200.30855pt too wide) in paragraph at lines 52--52
+Overfull \hbox (200.30855pt too wide) in paragraph at lines 53--53
 [][]  
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 52.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 52.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1079,7 +1136,7 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
 
 <kth_cmyk_logo-eps-converted-to.pdf, id=13, 370.38374pt x 370.38374pt>
@@ -1087,16 +1144,16 @@ File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-52.
+53.
 (pdftex.def)             Requested size: 31.29802pt x 31.29286pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5.69054> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 57.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 57.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 58.
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1105,13 +1162,13 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-57.
+58.
 (pdftex.def)             Requested size: 31.29802pt x 31.29286pt.
 Package epstopdf Info: Source file: <KTHfooterlines_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1121,13 +1178,13 @@ Package epstopdf Info: Source file: <KTHfooterlines_CMYK.eps>
 (epstopdf)                    size: 12325 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHfooterlines_CMYK-eps-con
 verted-to.pdf KTHfooterlines_CMYK.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHfooterlines_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHfooterlines_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHfooterlines_CMYK-eps-converted-to.pdf used on input
- line 57.
+ line 58.
 (pdftex.def)             Requested size: 564.5039pt x 113.03186pt.
 
 Overfull \hbox (200.30855pt too wide) has occurred while \output is active
@@ -1136,15 +1193,21 @@ Overfull \hbox (200.30855pt too wide) has occurred while \output is active
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <C:/Users/Erik/Desktop/Caro/Presentation/KTH Presentation Latex/kth_cmyk_logo-
-eps-converted-to.pdf> <C:/Users/Erik/Desktop/Caro/Presentation/KTH Presentation
- Latex/KTHfooterlines_CMYK-eps-converted-to.pdf>]
+ <C:/Users/Erik/Desktop/Caro/Presentation/kth_cmyk_logo-eps-converted-to.pdf> <
+C:/Users/Erik/Desktop/Caro/Presentation/KTHfooterlines_CMYK-eps-converted-to.pd
+f>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 69.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 81.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 81.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 81.
+
+Overfull \vbox (17.38066pt too high) detected at line 81
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1153,12 +1216,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 69.
+(epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-69.
+81.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1168,7 +1231,7 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 69.
+(epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
 
 <KTHplatta_CMYK-eps-converted-to.pdf, id=29, 2127.95pt x 104.39pt>
@@ -1176,7 +1239,7 @@ File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 69.
+ 81.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1185,8 +1248,13 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [2
 
- <C:/Users/Erik/Desktop/Caro/Presentation/KTH Presentation Latex/KTHplatta_CMYK
--eps-converted-to.pdf>]
+ <C:/Users/Erik/Desktop/Caro/Presentation/KTHplatta_CMYK-eps-converted-to.pdf>]
+ <Algorithm/TruckOnStreet.pdf, id=41, 279.0425pt x 271.0125pt>
+File: Algorithm/TruckOnStreet.pdf Graphic file (type pdf)
+
+<use Algorithm/TruckOnStreet.pdf>
+Package pdftex.def Info: Algorithm/TruckOnStreet.pdf used on input line 94.
+(pdftex.def)             Requested size: 105.6142pt x 102.57228pt.
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1195,12 +1263,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
  <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-79.
+94.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1210,13 +1278,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 79.
+ 94.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1225,18 +1293,13 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [3
 
-] <TruckOnStreet.pdf, id=45, 363.3575pt x 330.23375pt>
-File: TruckOnStreet.pdf Graphic file (type pdf)
+ <C:/Users/Erik/Desktop/Caro/Presentation/Algorithm/TruckOnStreet.pdf>]
+<Algorithm/Reward.png, id=58, 468.24937pt x 408.77719pt>
+File: Algorithm/Reward.png Graphic file (type png)
 
-<use TruckOnStreet.pdf>
-Package pdftex.def Info: TruckOnStreet.pdf used on input line 97.
-(pdftex.def)             Requested size: 145.67592pt x 132.39853pt.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 97.
-
-Overfull \vbox (134.20407pt too high) detected at line 97
- []
-
+<use Algorithm/Reward.png>
+Package pdftex.def Info: Algorithm/Reward.png used on input line 119.
+(pdftex.def)             Requested size: 99.58464pt x 86.93729pt.
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1245,12 +1308,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 97.
+(epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
-<use kth_cmyk_logo-eps-converted-to.pdf>
+ <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-97.
+119.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1260,13 +1323,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 97.
+(epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 97.
+ 119.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1275,24 +1338,22 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [4
 
- <C:/Users/Erik/Desktop/Caro/Presentation/KTH Presentation Latex/TruckOnStreet.
-pdf>]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Algorithm/Reward.png>]
 
-! LaTeX Error: File `PossibleTrajectories' not found.
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 137.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 \end{frame}
-                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<Algorithm/PossibleTrajectories.png, id=71, 275.0275pt x 268.00125pt>
+File: Algorithm/PossibleTrajectories.png Graphic file (type png)
 
+<use Algorithm/PossibleTrajectories.png>
+Package pdftex.def Info: Algorithm/PossibleTrajectories.png used on input line 
+137.
+(pdftex.def)             Requested size: 99.58464pt x 97.0406pt.
 
-Overfull \vbox (9.74431pt too high) detected at line 113
+Overfull \vbox (41.20703pt too high) detected at line 137
  []
 
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
@@ -1303,12 +1364,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 113.
+(epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
 <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-113.
+137.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1318,13 +1379,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 113.
+(epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 113.
+ 137.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1333,7 +1394,17 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [5
 
-]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Algorithm/PossibleTrajectories.png>] 
+<Algorithm/SafeStreet.pdf, id=79, 275.0275pt x 268.00125pt>
+File: Algorithm/SafeStreet.pdf Graphic file (type pdf)
+
+<use Algorithm/SafeStreet.pdf>
+Package pdftex.def Info: Algorithm/SafeStreet.pdf used on input line 159.
+(pdftex.def)             Requested size: 108.16563pt x 97.94821pt.
+
+Overfull \vbox (89.45657pt too high) detected at line 159
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1342,12 +1413,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 122.
+(epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-122.
+159.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1357,13 +1428,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 122.
+(epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 122.
+ 159.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1372,7 +1443,10 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [6
 
-]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Algorithm/SafeStreet.pdf>]
+Overfull \vbox (28.03293pt too high) detected at line 171
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1381,12 +1455,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-131.
+171.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1396,13 +1470,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 131.
+ 171.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1412,6 +1486,8 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 [7
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 184.
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1420,12 +1496,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 136.
+(epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
  <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-136.
+184.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1435,13 +1511,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 136.
+(epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 136.
+ 184.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1450,7 +1526,12 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [8
 
-]
+] <Algorithm/flow.pdf, id=105, 623.32875pt x 474.77374pt>
+File: Algorithm/flow.pdf Graphic file (type pdf)
+
+<use Algorithm/flow.pdf>
+Package pdftex.def Info: Algorithm/flow.pdf used on input line 192.
+(pdftex.def)             Requested size: 225.34653pt x 158.49576pt.
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1459,12 +1540,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
  <use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-144.
+192.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1474,13 +1555,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 144.
+ 192.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1489,7 +1570,26 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [9
 
-]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Algorithm/flow.pdf>]
+<Results/Unexploration_samples.pdf, id=114, 477.785pt x 299.1175pt>
+File: Results/Unexploration_samples.pdf Graphic file (type pdf)
+
+<use Results/Unexploration_samples.pdf>
+Package pdftex.def Info: Results/Unexploration_samples.pdf used on input line 2
+14.
+(pdftex.def)             Requested size: 182.09831pt x 113.99901pt.
+
+<Results/Exploration_samples.pdf, id=115, 477.785pt x 299.1175pt>
+File: Results/Exploration_samples.pdf Graphic file (type pdf)
+
+<use Results/Exploration_samples.pdf>
+Package pdftex.def Info: Results/Exploration_samples.pdf used on input line 214
+.
+(pdftex.def)             Requested size: 182.09831pt x 113.99901pt.
+
+Overfull \vbox (44.44113pt too high) detected at line 214
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1498,12 +1598,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 152.
+(epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-152.
+214.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1513,13 +1613,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 152.
+(epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 152.
+ 214.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1528,7 +1628,22 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [10
 
-]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Results/Unexploration_samples.pdf> <C
+:/Users/Erik/Desktop/Caro/Presentation/Results/Exploration_samples.pdf>]
+<Results/Policy.pdf, id=129, 614.295pt x 238.8925pt>
+File: Results/Policy.pdf Graphic file (type pdf)
+ <use Results/Policy.pdf>
+Package pdftex.def Info: Results/Policy.pdf used on input line 223.
+(pdftex.def)             Requested size: 291.35739pt x 113.30743pt.
+
+Overfull \hbox (6.71463pt too wide) in paragraph at lines 223--223
+ [] 
+ []
+
+
+Overfull \vbox (54.51225pt too high) detected at line 223
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1537,12 +1652,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 160.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-160.
+223.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1552,13 +1667,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 160.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 160.
+ 223.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1567,7 +1682,21 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [11
 
-]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Results/Policy.pdf>]
+<Results/GP.pdf, id=139, 668.4975pt x 625.33624pt>
+File: Results/GP.pdf Graphic file (type pdf)
+ <use Results/GP.pdf>
+Package pdftex.def Info: Results/GP.pdf used on input line 231.
+(pdftex.def)             Requested size: 291.35739pt x 272.5534pt.
+
+Overfull \hbox (6.71463pt too wide) in paragraph at lines 231--231
+ [] 
+ []
+
+
+Overfull \vbox (212.00772pt too high) detected at line 231
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1576,12 +1705,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-168.
+231.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1591,13 +1720,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 168.
+ 231.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1606,7 +1735,22 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [12
 
-]
+ <C:/Users/Erik/Desktop/Caro/Presentation/Results/GP.pdf>]
+<Results/Simulation.pdf, id=151, 668.4975pt x 338.26375pt>
+File: Results/Simulation.pdf Graphic file (type pdf)
+
+<use Results/Simulation.pdf>
+Package pdftex.def Info: Results/Simulation.pdf used on input line 239.
+(pdftex.def)             Requested size: 291.35739pt x 147.43257pt.
+
+Overfull \hbox (6.71463pt too wide) in paragraph at lines 239--239
+ [] 
+ []
+
+
+Overfull \vbox (86.88689pt too high) detected at line 239
+ []
+
 Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
 (epstopdf)                    size: 190451 bytes
@@ -1615,12 +1759,12 @@ Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
 (epstopdf)                    size: 23788 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
 -to.pdf kth_cmyk_logo.eps>
-(epstopdf)             \includegraphics on input line 175.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
- <use kth_cmyk_logo-eps-converted-to.pdf>
+<use kth_cmyk_logo-eps-converted-to.pdf>
 Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
-175.
+239.
 (pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
 Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    date: 2017-05-25 09:52:33
@@ -1630,13 +1774,13 @@ Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
 (epstopdf)                    size: 6147 bytes
 (epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
 d-to.pdf KTHplatta_CMYK.eps>
-(epstopdf)             \includegraphics on input line 175.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KTHplatta_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
- 175.
+ 239.
 (pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
 
 Overfull \hbox (327.7736pt too wide) has occurred while \output is active
@@ -1645,35 +1789,82 @@ Overfull \hbox (327.7736pt too wide) has occurred while \output is active
 
 [13
 
+ <C:/Users/Erik/Desktop/Caro/Presentation/Results/Simulation.pdf>]
+Overfull \vbox (3.4046pt too high) detected at line 256
+ []
+
+Package epstopdf Info: Source file: <kth_cmyk_logo.eps>
+(epstopdf)                    date: 2017-05-25 09:52:33
+(epstopdf)                    size: 190451 bytes
+(epstopdf)             Output file: <kth_cmyk_logo-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-05-25 09:52:33
+(epstopdf)                    size: 23788 bytes
+(epstopdf)             Command: <epstopdf --outfile=kth_cmyk_logo-eps-converted
+-to.pdf kth_cmyk_logo.eps>
+(epstopdf)             \includegraphics on input line 256.
+Package epstopdf Info: Output file is already uptodate.
+File: kth_cmyk_logo-eps-converted-to.pdf Graphic file (type pdf)
+<use kth_cmyk_logo-eps-converted-to.pdf>
+Package pdftex.def Info: kth_cmyk_logo-eps-converted-to.pdf used on input line 
+256.
+(pdftex.def)             Requested size: 25.60747pt x 25.60736pt.
+Package epstopdf Info: Source file: <KTHplatta_CMYK.eps>
+(epstopdf)                    date: 2017-05-25 09:52:33
+(epstopdf)                    size: 868966 bytes
+(epstopdf)             Output file: <KTHplatta_CMYK-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-05-25 09:52:33
+(epstopdf)                    size: 6147 bytes
+(epstopdf)             Command: <epstopdf --outfile=KTHplatta_CMYK-eps-converte
+d-to.pdf KTHplatta_CMYK.eps>
+(epstopdf)             \includegraphics on input line 256.
+Package epstopdf Info: Output file is already uptodate.
+File: KTHplatta_CMYK-eps-converted-to.pdf Graphic file (type pdf)
+
+<use KTHplatta_CMYK-eps-converted-to.pdf>
+Package pdftex.def Info: KTHplatta_CMYK-eps-converted-to.pdf used on input line
+ 256.
+(pdftex.def)             Requested size: 546.29303pt x 31.88792pt.
+
+Overfull \hbox (327.7736pt too wide) has occurred while \output is active
+[][]  
+ []
+
+[14
+
 ]
 \tf@nav=\write7
 \tf@toc=\write8
 \tf@snm=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
-
-("C:\Users\Erik\Desktop\Caro\Presentation\KTH Presentation Latex\KTHPresentatio
-n.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
+ (C:\Users\Erik\Desktop\Caro\Presentation\KTHPresentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
 Package rerunfilecheck Info: File `KTHPresentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21029 strings out of 493705
- 406200 string characters out of 3142156
- 579673 words of memory out of 3000000
- 23783 multiletter control sequences out of 15000+200000
- 44711 words of font info for 58 fonts, out of 3000000 for 9000
+ 22337 strings out of 493705
+ 430092 string characters out of 3142156
+ 605497 words of memory out of 3000000
+ 25064 multiletter control sequences out of 15000+200000
+ 52036 words of font info for 69 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 60i,28n,71p,781b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,28n,71p,781b,584s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on KTHPresentation.pdf (13 pages, 136519 bytes).
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/urw/zapfding/uzdr.pfb>
+Output written on KTHPresentation.pdf (14 pages, 1024666 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

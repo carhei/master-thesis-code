@@ -15,7 +15,7 @@
 \usepackage{times}
 \usepackage[T1]{fontenc}
 \usepackage{lipsum}
-
+\usepackage[]{epstopdf}
 % Author, Title, etc.
 
 %\title{}
@@ -73,7 +73,7 @@ Caroline Heidenreich
 \framesubtitle{Why do we want to do safe learning in control?}
 \begin{itemize}
 \item model-based control suffers often from poor model accuracy
-\item 
+\item reinforcement learning algorithms not designed for satisfying constraints
 \end{itemize}
 
 \end{frame}
@@ -82,15 +82,15 @@ Caroline Heidenreich
 \begin{frame}
 \frametitle{Algorithm}
 \framesubtitle{How to we do safe learning for control?}
-Setup
+Example
 \begin{itemize}
 \item autonomous vehicle with partly known model
 \item task: learn control without driving off the road
 \end{itemize}
 
 \begin{figure}[h!]
-\includegraphics[trim=0mm 0mm 0mm 0mm, width=0.4\paperwidth]{TruckOnStreet}
-\caption{Image test}
+\includegraphics[width=0.4\paperwidth]{TruckOnStreet}
+\caption{The truck}
 \end{figure}
 
 
@@ -99,9 +99,17 @@ Setup
 \begin{frame}
 \frametitle{Algorithm}
 \framesubtitle{Reinforcement Learning}
+General Idea: Finding the optimal policy by trying actions and receiving rewards
 \begin{itemize}
 \item 
 \end{itemize}
+
+\begin{figure}[h!]
+\includegraphics[trim=0mm 0mm 0mm 0mm, width=0.4\paperwidth]{PossibleTrajectories}
+\caption{Possible Trajectories}
+\end{figure}
+
+
 \end{frame}
 
 
