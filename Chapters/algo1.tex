@@ -90,12 +90,12 @@
 
 \begin{algorithm}[h!]
 \small
-   \caption{\textsc{Modification of Delayed Q-Learning}}
+   \caption{\textsc{Modification of Delayed Q-Learning}\cite{talebi2017modified}}
    \label{alg:alg1}
 \begin{algorithmic}
-   \REQUIRE $\Scal, \Acal,\gamma$, and $R_{\max}$, $m_0$, $\varepsilon_{\mathrm{target}}$. 
+   \REQUIRE $\Scal, \Acal,\gamma$, and $r_{\max}$, $m_0$, $\varepsilon_{\mathrm{target}}$. 
    \FORALL{$(s,a)$}
-    \STATE $Q(s, a) \leftarrow R_{\max}/(1-\gamma)$ {\color{blue}  \COMMENT{\texttt{optimistic initialization of $Q$-values}}} 
+    \STATE $Q(s, a) \leftarrow r_{\max}/(1-\gamma)$ {\color{blue}  \COMMENT{\texttt{optimistic initialization of $Q$-values}}} 
     \STATE $U(s,a) \leftarrow 0$    {\color{blue} \COMMENT{\texttt{per-batch cumulative $Q$-values for $(s,a)$}}}
     \STATE $B(s, a) \leftarrow 0$   {\color{blue}  \COMMENT{\texttt{beginning time-step of attempted update for $(s,a)$}}}
     \STATE $C(s,a) \leftarrow 0$    {\color{blue}  \COMMENT{\texttt{per-batch counter for $(s,a)$}}} 
